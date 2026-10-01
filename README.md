@@ -1,4 +1,4 @@
-# Encoding analysis reproducibility repository
+# NeuroRepFood_encoding
 
 Code and reproducibility materials accompanying:
 
