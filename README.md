@@ -1,9 +1,4 @@
-# NeuroRepFood_encoding
-
-Code and reproducibility materials accompanying:
-
-**Marrazzo G, Roefs A, Pimpini L. Vision-language encoding models reveal an image-computable food-quality dimension in human occipitotemporal cortex. 
-bioRxiv 2026.08.25.747006; doi: https://doi.org/10.64898/2026.08.25.747006**
+# Vision-language encoding models reveal an image-computable food-quality dimension in human occipitotemporal cortex
 
 This repository supports two complementary workflows:
 
