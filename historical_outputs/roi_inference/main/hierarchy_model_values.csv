@@ -1,0 +1,376 @@
+subject,roi,roi_label,model,model_label,model_short_label,n_vertices,r_joint,z_joint,hierarchy_level
+sub-104,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3859,0.05561615526676178,0.05567360508688223,0.0
+sub-104,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3859,0.059875741600990295,0.05994744950804016,0.0
+sub-104,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3859,0.05727803707122803,0.05734079941903019,0.0
+sub-104,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3859,0.058492615818977356,0.05855946170375281,0.0
+sub-104,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3859,0.05682085454463959,0.056882124061518845,0.0
+sub-104,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,375,0.042555391788482666,0.04258110846095348,1.0
+sub-104,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,375,0.04486352577805519,0.04489366165676293,1.0
+sub-104,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,375,0.03440328314900398,0.034416865876288845,1.0
+sub-104,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,375,0.0454261489212513,0.04545743381437186,1.0
+sub-104,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,375,0.03126569092273712,0.03127588475925976,1.0
+sub-104,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,888,-0.009265229105949402,-0.009265494242501041,2.0
+sub-104,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,888,0.008901253342628479,0.008901488442763015,2.0
+sub-104,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,888,0.004300088156014681,0.004300114660272103,2.0
+sub-104,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,888,0.005354554858058691,0.005354606032879826,2.0
+sub-104,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,888,0.008071870543062687,0.008072045857744492,2.0
+sub-105,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3866,0.04003045707941055,0.04005185976283478,0.0
+sub-105,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3866,0.05461742728948593,0.054671833783669584,0.0
+sub-105,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3866,0.046480655670166016,0.04651417219251565,0.0
+sub-105,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3866,0.0485035665333271,0.048541656745990654,0.0
+sub-105,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3866,0.0436386875808239,0.04366642016916471,0.0
+sub-105,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,374,0.07409358024597168,0.0742296163797919,1.0
+sub-105,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,374,0.08841265738010406,0.08864411185416902,1.0
+sub-105,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,374,0.08334999531507492,0.08354382085414096,1.0
+sub-105,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,374,0.06778805702924728,0.0678921779492722,1.0
+sub-105,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,374,0.07146237045526505,0.07158439425782277,1.0
+sub-105,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,884,-0.008435046300292015,-0.008435246360031175,2.0
+sub-105,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,884,0.01258326880633831,0.012583933008722086,2.0
+sub-105,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,884,0.015666132792830467,0.015667414615992917,2.0
+sub-105,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,884,0.002499934984371066,0.0024999401923175906,2.0
+sub-105,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,884,0.018018199130892754,0.018020149413290967,2.0
+sub-109,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3874,0.06441402435302734,0.06450333496882804,0.0
+sub-109,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3874,0.06488113850355148,0.0649724095359526,0.0
+sub-109,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3874,0.06411559879779816,0.06420367181268967,0.0
+sub-109,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3874,0.06162185221910477,0.0617000283235123,0.0
+sub-109,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3874,0.05916532874107361,0.05923451089428723,0.0
+sub-109,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,375,0.048925548791885376,0.04896464280253429,1.0
+sub-109,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,375,0.06657947599887848,0.06667811691154299,1.0
+sub-109,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,375,0.06492607295513153,0.0650175340736644,1.0
+sub-109,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,375,0.04017097130417824,0.040192600308101144,1.0
+sub-109,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,375,0.05200299993157387,0.05204995358716987,1.0
+sub-109,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,882,-0.028260713443160057,-0.028268240692334697,2.0
+sub-109,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,882,0.012990089133381844,0.012990819867040208,2.0
+sub-109,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,882,0.013136109337210655,0.013136864992935178,2.0
+sub-109,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,882,-0.015157697722315788,-0.015158858738693473,2.0
+sub-109,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,882,0.012436183169484138,0.012436824350091281,2.0
+sub-112,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3867,0.045287124812603,0.04531812311210642,0.0
+sub-112,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3867,0.04999770596623421,0.05003942949553186,0.0
+sub-112,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3867,0.05172028765082359,0.051766478862359626,0.0
+sub-112,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3867,0.04998907074332237,0.050030772636194855,0.0
+sub-112,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3867,0.05258997529745102,0.052638538704882026,0.0
+sub-112,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,377,0.04328826442360878,0.04331533378024977,1.0
+sub-112,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,377,0.06193985790014267,0.06201925244554978,1.0
+sub-112,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,377,0.0463414266705513,0.046374642648163926,1.0
+sub-112,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,377,0.0727178156375885,0.07284639822063535,1.0
+sub-112,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,377,0.06422287970781326,0.0643113962989862,1.0
+sub-112,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,884,-0.040256716310977936,-0.04027848420237116,2.0
+sub-112,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,884,-0.018143760040402412,-0.018145751384991388,2.0
+sub-112,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,884,-0.02262900583446026,-0.02263286958101511,2.0
+sub-112,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,884,-0.004004803020507097,-0.004004824430987107,2.0
+sub-112,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,884,0.0009366059675812721,0.0009366062414545978,2.0
+sub-115,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3868,0.034211162477731705,0.03422451881471254,0.0
+sub-115,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3868,0.03903748467564583,0.03905733289613935,0.0
+sub-115,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3868,0.036884699016809464,0.03690143966179965,0.0
+sub-115,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3868,0.03772801533341408,0.0377459313621203,0.0
+sub-115,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3868,0.035201575607061386,0.03521612644866863,0.0
+sub-115,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,377,0.04247292876243591,0.04249849611686234,1.0
+sub-115,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,377,0.044040508568286896,0.04406901491309532,1.0
+sub-115,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,377,0.044758982956409454,0.04478890848557085,1.0
+sub-115,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,377,0.016699915751814842,0.01670146847581483,1.0
+sub-115,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,377,0.014825732447206974,0.014826818834059,1.0
+sub-115,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,889,0.015488517470657825,0.01548975618399092,2.0
+sub-115,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,889,0.014657886698842049,0.0146589366009733,2.0
+sub-115,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,889,0.012162597849965096,0.012163197635981414,2.0
+sub-115,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,889,0.0047198873944580555,0.004719922443767261,2.0
+sub-115,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,889,0.0014474429190158844,0.001447443929858701,2.0
+sub-117,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3863,0.05406271666288376,0.054115480317960665,0.0
+sub-117,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3863,0.06689939647912979,0.06699946874460645,0.0
+sub-117,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3863,0.06081850454211235,0.06089365840040741,0.0
+sub-117,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3863,0.061850037425756454,0.06192908654693783,0.0
+sub-117,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3863,0.06247829645872116,0.06255978285346568,0.0
+sub-117,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,376,0.12470132857561111,0.1253538133974315,1.0
+sub-117,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,376,0.1357746422290802,0.1366183178675178,1.0
+sub-117,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,376,0.12929145991802216,0.1300191971704214,1.0
+sub-117,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,376,0.11735671758651733,0.11789998301926698,1.0
+sub-117,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,376,0.12469082325696945,0.12534314215038114,1.0
+sub-117,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,885,0.03898236155509949,0.0390021257627932,2.0
+sub-117,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,885,0.05071249604225159,0.050756036657429365,2.0
+sub-117,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,885,0.05113464221358299,0.05117928039495876,2.0
+sub-117,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,885,0.04240826144814491,0.042433712113335,2.0
+sub-117,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,885,0.05157870799303055,0.05162452050619016,2.0
+sub-118,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3864,0.060790661722421646,0.06086571225831294,0.0
+sub-118,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3864,0.07207198441028595,0.07219716432143469,0.0
+sub-118,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3864,0.06690628081560135,0.06700638403384225,0.0
+sub-118,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3864,0.06402380764484406,0.06411150231060402,0.0
+sub-118,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3864,0.06346140801906586,0.06354680824993701,0.0
+sub-118,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,376,0.055734410881996155,0.05579222840335696,1.0
+sub-118,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,376,0.07045144587755203,0.07056835394793097,1.0
+sub-118,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,376,0.06680144369602203,0.06690107624744793,1.0
+sub-118,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,376,0.04417978599667549,0.04420856386281348,1.0
+sub-118,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,376,0.04624329134821892,0.04627629657183115,1.0
+sub-118,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,884,-0.01761646382510662,-0.0176182865277862,2.0
+sub-118,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,884,0.006642409600317478,0.006642507294161943,2.0
+sub-118,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,884,0.0059059420600533485,0.005906010728208613,2.0
+sub-118,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,884,-0.009338129311800003,-0.00933840075634564,2.0
+sub-118,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,884,0.003978191874921322,0.003978212861422854,2.0
+sub-122,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3856,0.009119237773120403,0.009119490572517812,0.0
+sub-122,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3856,0.022587642073631287,0.022591484666847825,0.0
+sub-122,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3856,0.02244870364665985,0.022452475752665076,0.0
+sub-122,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3856,0.005868132691830397,0.005868200049568561,0.0
+sub-122,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3856,0.013857408426702023,0.013858295531318385,0.0
+sub-122,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,376,0.027931498363614082,0.027938765525016736,1.0
+sub-122,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,376,0.0538969561457634,0.05394923539221043,1.0
+sub-122,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,376,0.045611243695020676,0.04564291289236867,1.0
+sub-122,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,376,0.03816908970475197,0.0381876418446748,1.0
+sub-122,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,376,0.04600951448082924,0.04604202124863465,1.0
+sub-122,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,888,-0.008070986717939377,-0.008071161975038026,2.0
+sub-122,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,888,0.002048808615654707,0.0020488114823663767,2.0
+sub-122,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,888,-0.0003940097813028842,-0.00039400980169206594,2.0
+sub-122,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,888,0.002256788080558181,0.0022567919119133263,2.0
+sub-122,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,888,0.004837504588067532,0.004837542323472317,2.0
+sub-124,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3874,0.046081237494945526,0.04611389665133252,0.0
+sub-124,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3874,0.04896770045161247,0.049006895690556364,0.0
+sub-124,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3874,0.05001598224043846,0.050057751587507256,0.0
+sub-124,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3874,0.0458255298435688,0.045857647874553945,0.0
+sub-124,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3874,0.04470909386873245,0.04473891936294084,0.0
+sub-124,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,376,0.06765918433666229,0.06776271145990145,1.0
+sub-124,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,376,0.08291476219892502,0.0831055589058876,1.0
+sub-124,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,376,0.07417673617601395,0.0743132318623888,1.0
+sub-124,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,376,0.10001540929079056,0.10035091269549609,1.0
+sub-124,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,376,0.09992288798093796,0.1002574574092675,1.0
+sub-124,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,885,0.0036822312977164984,0.0036822479400980073,2.0
+sub-124,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,885,0.026837043464183807,0.02684348917005907,2.0
+sub-124,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,885,0.024382006376981735,0.02438683965762658,2.0
+sub-124,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,885,0.01934858411550522,0.019350999153020448,2.0
+sub-124,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,885,0.028078142553567886,0.02808552481413748,2.0
+sub-125,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3874,0.06325400620698929,0.06333857052944203,0.0
+sub-125,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3874,0.058583375066518784,0.05865053302517336,0.0
+sub-125,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3874,0.058693777769804,0.0587613166561651,0.0
+sub-125,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3874,0.06761594116687775,0.06771926955032899,0.0
+sub-125,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3874,0.06305171549320221,0.06313546979156179,0.0
+sub-125,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,377,0.10175822675228119,0.1021116516866439,1.0
+sub-125,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,377,0.12554392218589783,0.12620980823547312,1.0
+sub-125,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,377,0.11850392818450928,0.11906337367867885,1.0
+sub-125,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,377,0.10047297179698944,0.10081311988284586,1.0
+sub-125,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,377,0.1071649044752121,0.10757799322766572,1.0
+sub-125,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,882,0.00963528547435999,0.009635583666847036,2.0
+sub-125,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,882,0.02902589738368988,0.02903405297257219,2.0
+sub-125,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,882,0.02557833306491375,0.02558391347337614,2.0
+sub-125,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,882,0.027007898315787315,0.027014467950823635,2.0
+sub-125,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,882,0.031178994104266167,0.031189103343200977,2.0
+sub-126,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3871,0.02246280573308468,0.022466584953808866,0.0
+sub-126,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3871,0.023445481434464455,0.02344977877212713,0.0
+sub-126,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3871,0.021817611530423164,0.021821074306596664,0.0
+sub-126,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3871,0.030949246138334274,0.030959133460017177,0.0
+sub-126,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3871,0.02830612286925316,0.028313686472866965,0.0
+sub-126,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,375,0.0268853809684515,0.026891861576223107,1.0
+sub-126,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,375,0.030896930024027824,0.03090676727119172,1.0
+sub-126,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,375,0.02913779765367508,0.029146047962869445,1.0
+sub-126,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,375,0.02896118350327015,0.028969284646230352,1.0
+sub-126,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,375,0.027597544714808464,0.02760455424009132,1.0
+sub-126,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,889,-0.008915606886148453,-0.008915843125472679,2.0
+sub-126,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,889,0.003396789776161313,0.00339680284050993,2.0
+sub-126,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,889,0.0042368704453110695,0.004236895797705099,2.0
+sub-126,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,889,0.0007235076045617461,0.0007235077308050008,2.0
+sub-126,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,889,0.008279048837721348,0.008279238001482205,2.0
+sub-129,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3864,0.04971645027399063,0.04975747293402406,0.0
+sub-129,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3864,0.052289050072431564,0.05233678368066765,0.0
+sub-129,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3864,0.052628204226493835,0.052676873734416645,0.0
+sub-129,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3864,0.0435074046254158,0.043534887484249746,0.0
+sub-129,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3864,0.046675775200128555,0.046709715961206405,0.0
+sub-129,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,375,0.0677957683801651,0.06789992490320267,1.0
+sub-129,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,375,0.06337933242321014,0.06346440120106996,1.0
+sub-129,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,375,0.06361134350299835,0.0636973514576724,1.0
+sub-129,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,375,0.02374117448925972,0.02374563651685397,1.0
+sub-129,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,375,0.02309531904757023,0.023099426661939006,1.0
+sub-129,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,892,0.005073255393654108,0.005073298919340576,2.0
+sub-129,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,892,0.021458420902490616,0.0214617154216172,2.0
+sub-129,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,892,0.021872203797101974,0.021875692637155907,2.0
+sub-129,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,892,-0.008034935221076012,-0.008035108140073056,2.0
+sub-129,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,892,0.0038897318299859762,0.0038897514473960346,2.0
+sub-132,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3883,0.09292123466730118,0.09319006710008791,0.0
+sub-132,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3883,0.0933462530374527,0.09361880429803268,0.0
+sub-132,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3883,0.09265641123056412,0.09292294379265503,0.0
+sub-132,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3883,0.0847705602645874,0.0849744953837405,0.0
+sub-132,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3883,0.0840277299284935,0.08422633570952437,0.0
+sub-132,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,377,0.11980506777763367,0.1203832528417149,1.0
+sub-132,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,377,0.1127251535654068,0.11320629189252028,1.0
+sub-132,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,377,0.11021421104669571,0.11066375571265898,1.0
+sub-132,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,377,0.11784357577562332,0.1183936687914481,1.0
+sub-132,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,377,0.1154114380478859,0.11592799170220074,1.0
+sub-132,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,891,0.026241345331072807,0.026247371156161554,2.0
+sub-132,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,891,0.036379553377628326,0.03639561523960387,2.0
+sub-132,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,891,0.035986341536045074,0.03600188792287894,2.0
+sub-132,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,891,0.024538937956094742,0.02454386518774535,2.0
+sub-132,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,891,0.029757075011730194,0.029765862814183915,2.0
+sub-134,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3878,0.07950826734304428,0.07967644457343134,0.0
+sub-134,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3878,0.07308895140886307,0.07321951708698926,0.0
+sub-134,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3878,0.07650862634181976,0.0766584357108316,0.0
+sub-134,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3878,0.06339258700609207,0.06347770925277457,0.0
+sub-134,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3878,0.061475709080696106,0.06155332945248841,0.0
+sub-134,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,377,0.08212339133024216,0.08230876228916806,1.0
+sub-134,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,377,0.08732733130455017,0.08755034051071503,1.0
+sub-134,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,377,0.08539878576993942,0.08560730205210829,1.0
+sub-134,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,377,0.0628778487443924,0.06296091099281298,1.0
+sub-134,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,377,0.06222452223300934,0.06230501817818365,1.0
+sub-134,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,887,-0.0027639942709356546,-0.002764001309630732,2.0
+sub-134,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,887,0.02805553749203682,0.028062901931485994,2.0
+sub-134,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,887,0.025519046932458878,0.02552458861746076,2.0
+sub-134,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,887,0.009107915684580803,0.00910816754351809,2.0
+sub-134,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,887,0.025637522339820862,0.025643141588082157,2.0
+sub-137,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3829,0.02919871173799038,0.029207013916249237,0.0
+sub-137,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3829,0.03672942519187927,0.03674595519244354,0.0
+sub-137,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3829,0.03457892686128616,0.03459271879003924,0.0
+sub-137,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3829,0.04173925518989563,0.04176351945410315,0.0
+sub-137,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3829,0.03936046361923218,0.039380808882679114,0.0
+sub-137,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,376,0.10089318454265594,0.10123763598969798,1.0
+sub-137,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,376,0.10335657745599747,0.1037269929416791,1.0
+sub-137,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,376,0.10480016469955444,0.10518638907723045,1.0
+sub-137,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,376,0.07859961688518524,0.07876207970427063,1.0
+sub-137,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,376,0.08195357024669647,0.08213779051173861,1.0
+sub-137,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,889,-0.00016433530254289508,-0.00016433530402224652,2.0
+sub-137,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,889,0.010631319135427475,0.010631719697350966,2.0
+sub-137,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,889,0.012745845131576061,0.012746535414281166,2.0
+sub-137,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,889,0.0004755015834234655,0.00047550161926071804,2.0
+sub-137,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,889,0.01078308466821909,0.010783502631462936,2.0
+sub-139,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3864,-1.8788174202200025e-05,-1.8788174204410737e-05,0.0
+sub-139,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3864,0.011960824951529503,0.011961395377683053,0.0
+sub-139,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3864,0.005373032297939062,0.0053730840043771655,0.0
+sub-139,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3864,0.028408929705619812,0.028416576047903982,0.0
+sub-139,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3864,0.0253475122153759,0.02535294287061097,0.0
+sub-139,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,377,-0.011515641584992409,-0.011516150655245512,1.0
+sub-139,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,377,-0.015334327705204487,-0.015335529787620181,1.0
+sub-139,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,377,-0.02558920904994011,-0.02559479658171634,1.0
+sub-139,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,377,0.014052800834178925,0.01405372599851317,1.0
+sub-139,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,377,-0.0038300787564367056,-0.00383009748505251,1.0
+sub-139,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,889,-0.012221593409776688,-0.012222201966638428,2.0
+sub-139,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,889,-0.000430237443652004,-0.0004302374701982679,2.0
+sub-139,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,889,-0.004116857890039682,-0.0041168811484907685,2.0
+sub-139,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,889,-0.00035618420224636793,-0.00035618421730906484,2.0
+sub-139,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,889,0.0012504828628152609,0.0012504835146123039,2.0
+sub-140,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3867,0.0507778637111187,0.05082157308742986,0.0
+sub-140,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3867,0.05155382677912712,0.051599572954752045,0.0
+sub-140,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3867,0.05333226919174194,0.05338292053579636,0.0
+sub-140,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3867,0.05089874565601349,0.050942768265437796,0.0
+sub-140,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3867,0.052544984966516495,0.05259342370585987,0.0
+sub-140,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,377,0.11838822811841965,0.11894602730461387,1.0
+sub-140,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,377,0.125796839594841,0.1264667840768059,1.0
+sub-140,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,377,0.1258101612329483,0.1264803199405412,1.0
+sub-140,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,377,0.09566664695739746,0.09596011061132713,1.0
+sub-140,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,377,0.10054279118776321,0.10088365177513416,1.0
+sub-140,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,880,0.017127174884080887,0.0171288498747384,2.0
+sub-140,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,880,0.024821633473038673,0.024826733006033965,2.0
+sub-140,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,880,0.028680292889475822,0.028688160519056132,2.0
+sub-140,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,880,0.01420546043664217,0.014206416083150937,2.0
+sub-140,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,880,0.024540677666664124,0.024545605946603488,2.0
+sub-141,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3879,0.09627819061279297,0.09657733939905884,0.0
+sub-141,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3879,0.09341823309659958,0.09369141756254686,0.0
+sub-141,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3879,0.08903399109840393,0.08927037543259343,0.0
+sub-141,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3879,0.08856669813394547,0.08879936833223466,0.0
+sub-141,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3879,0.07967943698167801,0.0798487055168039,0.0
+sub-141,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,377,0.0648011863231659,0.06489211978720327,1.0
+sub-141,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,377,0.06657012552022934,0.06666872480516141,1.0
+sub-141,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,377,0.06244631111621857,0.06252767223009825,1.0
+sub-141,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,377,0.029924426227808,0.029933363184775633,1.0
+sub-141,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,377,0.028100354596972466,0.02810775439681454,1.0
+sub-141,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,888,0.0218915157020092,0.02189501379333832,2.0
+sub-141,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,888,0.030929023399949074,0.03093889134527056,2.0
+sub-141,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,888,0.03168625757098198,0.03169686849788162,2.0
+sub-141,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,888,0.01506728120148182,0.015068421563092068,2.0
+sub-141,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,888,0.018162870779633522,0.018164868424106834,2.0
+sub-143,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3877,0.05147525295615196,0.05152079006180569,0.0
+sub-143,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3877,0.05618330463767052,0.05624253224532955,0.0
+sub-143,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3877,0.0533338338136673,0.05338448962084981,0.0
+sub-143,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3877,0.06265437602996826,0.06273655440562531,0.0
+sub-143,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3877,0.060571104288101196,0.06064534338754574,0.0
+sub-143,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,376,0.07634106278419495,0.07648988770488005,1.0
+sub-143,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,376,0.06858465820550919,0.06869250017026654,1.0
+sub-143,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,376,0.07284184545278549,0.07297108850844672,1.0
+sub-143,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,376,0.03668241947889328,0.03669888606204521,1.0
+sub-143,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,376,0.03642050176858902,0.03643661795761389,1.0
+sub-143,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,886,0.009141167625784874,0.009141422253421272,2.0
+sub-143,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,886,0.02111215703189373,0.02111529459691229,2.0
+sub-143,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,886,0.020196394994854927,0.020199141665706757,2.0
+sub-143,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,886,0.00897184107452631,0.0089720818124091,2.0
+sub-143,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,886,0.013636809773743153,0.013637655180186696,2.0
+sub-144,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3872,0.024184880778193474,0.02418959774747766,0.0
+sub-144,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3872,0.03166520595550537,0.03167579573900983,0.0
+sub-144,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3872,0.027549302205443382,0.02755627502433417,0.0
+sub-144,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3872,0.033800769597291946,0.03381365079835266,0.0
+sub-144,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3872,0.031723033636808395,0.031733681567641274,0.0
+sub-144,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,375,0.016962788999080658,0.016964416216224895,1.0
+sub-144,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,375,0.07021637260913849,0.07033211202296497,1.0
+sub-144,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,375,0.05825962498784065,0.05832567417708922,1.0
+sub-144,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,375,0.02302747406065464,0.023031545573933304,1.0
+sub-144,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,375,0.0529344342648983,0.052983959274924275,1.0
+sub-144,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,878,-0.013378769159317017,-0.013379567473547386,2.0
+sub-144,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,878,0.016196535900235176,0.01619795239026871,2.0
+sub-144,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,878,0.007767935283482075,0.007768091530330148,2.0
+sub-144,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,878,0.008699964731931686,0.008700184240231012,2.0
+sub-144,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,878,0.01440806407481432,0.014409061200117744,2.0
+sub-145,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3850,0.005000992678105831,0.005001034370220011,0.0
+sub-145,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3850,0.012940735556185246,0.01294145799200775,0.0
+sub-145,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3850,0.007861725986003876,0.007861887961216755,0.0
+sub-145,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3850,0.01470780186355114,0.014708862529019706,0.0
+sub-145,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3850,0.013730982318520546,0.01373184536205215,0.0
+sub-145,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,377,0.05070671811699867,0.0507502438361436,1.0
+sub-145,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,377,0.05706407502293587,0.057126135735293376,1.0
+sub-145,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,377,0.048900946974754333,0.048939981984250765,1.0
+sub-145,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,377,0.04560172185301781,0.04563337120411913,1.0
+sub-145,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,377,0.03995945677161217,0.03998074570119658,1.0
+sub-145,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,888,0.005641643423587084,0.005641703279070022,2.0
+sub-145,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,888,0.016226811334490776,0.01622823578355843,2.0
+sub-145,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,888,0.01379864476621151,0.013799520632208606,2.0
+sub-145,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,888,0.011977825313806534,0.011978398175862022,2.0
+sub-145,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,888,0.01558405626565218,0.01558531804541793,2.0
+sub-146,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3882,0.07439377158880234,0.07453147158810089,0.0
+sub-146,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3882,0.06882572174072266,0.06893470702064965,0.0
+sub-146,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3882,0.07131737470626831,0.07143865575023475,0.0
+sub-146,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3882,0.05115005373954773,0.051194732336090155,0.0
+sub-146,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3882,0.04875456914305687,0.04879325433156195,0.0
+sub-146,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,377,0.11749405413866043,0.11803923974379722,1.0
+sub-146,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,377,0.13551978766918182,0.13635868603709025,1.0
+sub-146,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,377,0.1407621055841446,0.1417030023097883,1.0
+sub-146,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,377,0.08951214700937271,0.08975237271757656,1.0
+sub-146,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,377,0.1166406124830246,0.11717393929731694,1.0
+sub-146,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,890,-0.009258963167667389,-0.009259227766640447,2.0
+sub-146,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,890,0.01964486390352249,0.0196473916085754,2.0
+sub-146,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,890,0.013955933041870594,0.013956839204468777,2.0
+sub-146,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,890,0.0022380813024938107,0.002238085039360696,2.0
+sub-146,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,890,0.01549286674708128,0.015494106504323956,2.0
+sub-149,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3856,0.03532595932483673,0.03534066503448342,0.0
+sub-149,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3856,0.038099899888038635,0.03811835126281916,0.0
+sub-149,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3856,0.03821258246898651,0.0382311981375099,0.0
+sub-149,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3856,0.0344180166721344,0.034431616865960586,0.0
+sub-149,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3856,0.03696545213460922,0.036982303033714206,0.0
+sub-149,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,377,0.17040424048900604,0.1720829636971352,1.0
+sub-149,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,377,0.17656293511390686,0.17843278874405347,1.0
+sub-149,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,377,0.17388448119163513,0.17566949045162475,1.0
+sub-149,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,377,0.15150797367095947,0.15268347828722206,1.0
+sub-149,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,377,0.16046036779880524,0.16185919473247745,1.0
+sub-149,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,887,0.02357819490134716,0.02358256564465593,2.0
+sub-149,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,887,0.030249042436480522,0.030258273508900393,2.0
+sub-149,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,887,0.030795088037848473,0.030804828292404295,2.0
+sub-149,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,887,0.027489153668284416,0.027496080901672,2.0
+sub-149,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,887,0.03012506477534771,0.030134182768903017,2.0
+sub-150,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3873,0.050078023225069046,0.05011994835655984,0.0
+sub-150,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3873,0.05600234121084213,0.05606099763663833,0.0
+sub-150,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3873,0.05221809819340706,0.052265637541633006,0.0
+sub-150,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3873,0.05951567739248276,0.05958609758992386,0.0
+sub-150,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3873,0.05733940750360489,0.05740237207385962,0.0
+sub-150,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,377,0.08351189643144608,0.08370685681902469,1.0
+sub-150,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,377,0.09563563764095306,0.09592881496661322,1.0
+sub-150,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,377,0.08973806351423264,0.08998011862879228,1.0
+sub-150,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,377,0.06851765513420105,0.06862518074738884,1.0
+sub-150,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,377,0.07473662495613098,0.07487624187089557,1.0
+sub-150,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,888,0.01937778852880001,0.0193802145201221,2.0
+sub-150,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,888,0.042311035096645355,0.04233631099104771,2.0
+sub-150,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,888,0.03493977710604668,0.03495400554993665,2.0
+sub-150,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,888,0.023598134517669678,0.023602516361588225,2.0
+sub-150,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,888,0.02950081042945385,0.02950937306475339,2.0
+sub-151,EarlyVisual,Early visual,M0_visual,M0 Visual,Visual,3868,0.0462009459733963,0.04623386053307356,0.0
+sub-151,EarlyVisual,Early visual,M1_visual_rawcal,M1 +RawCal,+RawCal,3868,0.0664701908826828,0.06656834599819025,0.0
+sub-151,EarlyVisual,Early visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,3868,0.05562876537442207,0.055686254329504345,0.0
+sub-151,EarlyVisual,Early visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,3868,0.05546513572335243,0.05552211824212196,0.0
+sub-151,EarlyVisual,Early visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,3868,0.05685233324766159,0.05691370478285534,0.0
+sub-151,IntermediateVisual,Intermediate visual,M0_visual,M0 Visual,Visual,376,0.04402792826294899,0.04405641016699838,1.0
+sub-151,IntermediateVisual,Intermediate visual,M1_visual_rawcal,M1 +RawCal,+RawCal,376,0.06699895113706589,0.06709947163476826,1.0
+sub-151,IntermediateVisual,Intermediate visual,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,376,0.06054316833615303,0.060617304612732785,1.0
+sub-151,IntermediateVisual,Intermediate visual,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,376,0.046614859253168106,0.04664866718517796,1.0
+sub-151,IntermediateVisual,Intermediate visual,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,376,0.06125671789050102,0.061333510464383685,1.0
+sub-151,HighLevelVTC,HighLevelVTC,M0_visual,M0 Visual,Visual,888,0.02573036216199398,0.025736042693919898,2.0
+sub-151,HighLevelVTC,HighLevelVTC,M1_visual_rawcal,M1 +RawCal,+RawCal,888,0.06137340888381004,0.061450641817483255,2.0
+sub-151,HighLevelVTC,HighLevelVTC,M2_visual_predclip,M2 +PredCLIP,+PredCLIP,888,0.05245612934231758,0.052504322491166135,2.0
+sub-151,HighLevelVTC,HighLevelVTC,M3_visual_resclip,M3 +ResCLIP,+ResCLIP,888,0.04264342784881592,0.04266930457168325,2.0
+sub-151,HighLevelVTC,HighLevelVTC,M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,888,0.05283956229686737,0.05288882120234162,2.0

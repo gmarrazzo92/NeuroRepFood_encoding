@@ -1,0 +1,2 @@
+comparison,comparison_label,model_A,model_B,n_subjects,mean_slope_delta_z_per_step,mean_slope_delta_r_per_step,cohens_dz_slope_z,p_expected,sig_unc_05_expected,q_fdr_bh,sig_fdr_05
+D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,25,0.003924102183343367,0.003920648557832465,1.1323525663268832,3.999920001599968e-05,True,3.999920001599968e-05,True

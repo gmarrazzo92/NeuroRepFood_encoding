@@ -1,0 +1,4 @@
+comparison,comparison_label,pair,roi_A,roi_B,alternative,n_subjects,mean_pair_delta_z_A_minus_B,mean_pair_delta_r_A_minus_B,cohens_dz,p,sig_unc_05,q_fdr_bh,sig_fdr_05
+D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,Intermediate_gt_Early,IntermediateVisual,EarlyVisual,greater,25,-0.0001084570631541687,-0.0001315140724182129,-0.014150208245155789,0.5289694206115878,False,0.5289694206115878,False
+D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,HighLevelVTC_gt_Early,HighLevelVTC,EarlyVisual,greater,25,0.007848204366686734,0.00784129711566493,1.1323525663268832,1.999960000799984e-05,True,5.9998800023999525e-05,True
+D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,HighLevelVTC_gt_Intermediate,HighLevelVTC,IntermediateVisual,greater,25,0.007956661429840901,0.007972811188083143,1.0811117687228435,3.999920001599968e-05,True,5.9998800023999525e-05,True

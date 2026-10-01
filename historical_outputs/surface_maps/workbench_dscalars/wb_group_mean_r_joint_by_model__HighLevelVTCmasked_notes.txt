@@ -1,0 +1,10 @@
+Masked Workbench dscalar for visualization only.
+Input: E:\NeuroRepFood\NeuroRepFood_CLIP_code_v3\reproduced_outputs\surface_maps\workbench_dscalars\wb_group_mean_r_joint_by_model.dscalar.nii
+Atlas: E:\NeuroRepFood\NeuroRepFood_CLIP_code_v3\resources\atlas\Q1-Q6_RelatedValidation210.CorticalAreas_dil_Final_Final_Areas_Group_Colors.32k_fs_LR.dlabel.nii
+Mask type: Broad visual cortex display mask
+Parcels used: V1, V2, V3, V4, V3A, V3B, V3CD, V6, V6A, V7, V8, LO1, LO2, LO3, PIT, MT, MST, FST, FFC, VVC, VMV1, VMV2, VMV3, TE1a, TE1m, TE1p, TE2p, PHA1, PHA2, PHA3, PH
+Parcels found: FFC, FST, LO1, LO2, LO3, MST, MT, PH, PHA1, PHA2, PHA3, PIT, TE1a, TE1m, TE1p, TE2p, V1, V2, V3, V3A, V3B, V3CD, V4, V6, V6A, V7, V8, VMV1, VMV2, VMV3, VVC
+Missing parcels: None
+Outside mode: nan
+Mask grayordinates: 9302
+Formal inference was not altered; masking was for display only.

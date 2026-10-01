@@ -1,0 +1,32 @@
+{
+  "MODEL_NAME": "ViT-B/32",
+  "DEVICE": "cuda",
+  "BATCH_SIZE": 16,
+  "TOKEN_MODES": [
+    "cls",
+    "mean_patch"
+  ],
+  "OMIT_CLS_EMBEDDING_FROM_RSA": true,
+  "FEATURE_RDM_METRIC": "correlation",
+  "MODEL_RDM_TYPES_TO_RUN": [
+    "ordinal",
+    "binary"
+  ],
+  "RSA_METHOD_BY_MODEL": {
+    "ordinal": "spearman",
+    "binary": "pearson"
+  },
+  "N_PERMUTATIONS": 10000,
+  "RANDOM_STATE": 42,
+  "IMGDIR": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\data\\stimuli\\images",
+  "STIM_CSV": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\data\\stimuli\\ordered_stimuli.csv",
+  "OUTDIR": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\diagnostics\\clip_openai_layerwise_processing_rsa",
+  "label_definition": {
+    "level_0": "raw / natural produce",
+    "level_1": "minimally processed or visually natural single-ingredient food",
+    "level_2": "processed or prepared simple food",
+    "level_3": "highly processed / composite / confectionery / fried / snack-like food",
+    "binary_0": "levels 0-1: unprocessed / minimally processed",
+    "binary_1": "levels 2-3: processed / prepared"
+  }
+}

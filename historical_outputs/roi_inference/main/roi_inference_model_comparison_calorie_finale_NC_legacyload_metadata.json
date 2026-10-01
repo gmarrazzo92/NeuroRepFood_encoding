@@ -1,0 +1,131 @@
+{
+  "script_name": "roi_inference_model_comparison_calorie_finale_NC_legacyload.py",
+  "script_version": "v2.3_nc_source_modes",
+  "created": "2026-10-01T09:23:00",
+  "purpose": "ROI inference for nested calorie/semantic encoding models with configurable historical, cached, or recomputed split-half noise ceilings.",
+  "noise_ceiling_definition": {
+    "preferred_file": "noise_ceiling_r_splithalf100_seed42.npy",
+    "nc_mode": "historical",
+    "historical_outputs_directory": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\historical_outputs",
+    "reproduced_cache_directory": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\noise_ceiling_cache",
+    "formula": "NC(r) = sqrt(max(r_SB, 0)); r_SB = 2*r_half/(1+r_half)",
+    "n_split_half_iter": 100,
+    "noise_random_state": 42,
+    "allow_incomplete_design": true,
+    "min_reps_per_condition": 2
+  },
+  "paths": {
+    "MAINDIR": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3",
+    "OUTDIR": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference",
+    "FIGDIR": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\figures",
+    "MODEL_ROOT": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\encoding_models",
+    "GLMSINGLE_DIR": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\data\\glmsingle",
+    "HISTORICAL_OUTPUTS_DIR": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\historical_outputs",
+    "NC_CACHE_DIR": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\noise_ceiling_cache",
+    "HCP_DLABEL": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\resources\\atlas\\Q1-Q6_RelatedValidation210.CorticalAreas_dil_Final_Final_Areas_Group_Colors.32k_fs_LR.dlabel.nii"
+  },
+  "subjects": [
+    "sub-104",
+    "sub-105",
+    "sub-109",
+    "sub-112",
+    "sub-115",
+    "sub-117",
+    "sub-118",
+    "sub-122",
+    "sub-124",
+    "sub-125",
+    "sub-126",
+    "sub-129",
+    "sub-132",
+    "sub-134",
+    "sub-137",
+    "sub-139",
+    "sub-140",
+    "sub-141",
+    "sub-143",
+    "sub-144",
+    "sub-145",
+    "sub-146",
+    "sub-149",
+    "sub-150",
+    "sub-151"
+  ],
+  "n_subjects": 25,
+  "roi_groups": {
+    "EarlyVisual": [
+      "V1",
+      "V2",
+      "V3",
+      "V4"
+    ],
+    "IntermediateVisual": [
+      "V8",
+      "PIT",
+      "LO1",
+      "LO2",
+      "LO3"
+    ],
+    "HighLevelVTC": [
+      "FFC",
+      "VVC",
+      "TE1p",
+      "TE2p"
+    ]
+  },
+  "models": {
+    "M0_visual": {
+      "label": "M0 Visual",
+      "dir": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\encoding_models\\M0_visual",
+      "n_subjects_available": 25
+    },
+    "M1_visual_rawcal": {
+      "label": "M1 +RawCal",
+      "dir": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\encoding_models\\M1_visual_rawcal",
+      "n_subjects_available": 25
+    },
+    "M2_visual_predclip": {
+      "label": "M2 +PredCLIP",
+      "dir": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\encoding_models\\M2_visual_predclip",
+      "n_subjects_available": 25
+    },
+    "M3_visual_resclip": {
+      "label": "M3 +ResCLIP",
+      "dir": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\encoding_models\\M3_visual_resclip",
+      "n_subjects_available": 25
+    },
+    "M4_visual_pred_resclip": {
+      "label": "M4 +Pred+Res",
+      "dir": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\encoding_models\\M4_visual_pred_resclip",
+      "n_subjects_available": 25
+    }
+  },
+  "noise_ceiling_loaded": {
+    "n_rows": 75,
+    "n_subjects_loaded": 25,
+    "expansion_methods": [
+      "legacy_noise_ceiling_r_full91k"
+    ],
+    "n_preferred_legacy_rows": 75,
+    "output_csv": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\noise_ceiling_roi_values.csv"
+  },
+  "outputs": {
+    "subjects_included": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\subjects_included.csv",
+    "models_available": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\models_available.csv",
+    "roi_model_values": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\roi_model_r_joint_subject_values.csv",
+    "roi_model_inference": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\roi_model_r_joint_inference.csv",
+    "roi_model_comparisons": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\roi_model_comparisons.csv",
+    "hierarchy_model_values": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\hierarchy_model_values.csv",
+    "hierarchy_model_gain_values": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\hierarchy_model_gain_values.csv",
+    "main_figure_png": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\figures\\main_fig1_core_story.png",
+    "main_figure_pdf": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\figures\\main_fig1_core_story.pdf",
+    "metadata_json": "E:\\NeuroRepFood\\NeuroRepFood_CLIP_code_v3\\reproduced_outputs\\roi_inference\\roi_inference_model_comparison_calorie_finale_NC_legacyload_metadata.json"
+  },
+  "software": {
+    "python": "3.10.20",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "nibabel": "5.4.0"
+  }
+}

@@ -1,0 +1,25 @@
+Workbench map notes
+================================
+
+These maps are descriptive group-mean maps, not vertexwise inferential maps.
+Formal inference remains ROI-level with subject as inferential unit.
+
+Recommended main Workbench panels:
+1. wb_group_mean_r_joint_by_model.dscalar.nii
+   - mean_r_joint__M0_visual
+2. wb_group_mean_model_gains_delta_r.dscalar.nii
+   - mean_delta_r__M2_predclip_gt_M0_visual
+   - mean_delta_r__M3_resclip_gt_M0_visual
+   - mean_delta_r__M2_predclip_gt_M3_resclip
+3. wb_group_m4_split_maps.dscalar.nii
+   - mean_r_split__CaloriePredCLIP
+   - mean_r_split__CalorieResCLIP
+   - mean_delta_r_split__PredCLIP_minus_ResCLIP
+
+Display suggestions:
+- Use a positive sequential palette for absolute r_joint maps.
+- Use a diverging palette centered at zero for gain/split-difference maps.
+- Keep the same color scale across related gain maps.
+
+Regenerated from 25 subjects.
+USE_POSITIVE_NORMALIZED_FRACTIONS = False

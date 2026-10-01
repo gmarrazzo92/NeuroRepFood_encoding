@@ -1,0 +1,19 @@
+Historical source:
+  Python(2).zip::Python/EncodingAnalysis/permutation_null_fixed_deltas_resume_highlevelvtc.py
+
+Historical SHA-256:
+  9c78914bb2aab8ca6eb6bddcfdb1d9cc0df58e68203cd35c7339d2c4e614f8a1
+
+Release script:
+  analysis/06_robustness/run_permutation_controls.py
+
+Release SHA-256:
+  fa9de7ca73799af8ceb865c07d7ca12c567aa26d8bc199d8abdec47846b51653
+
+Changes:
+  - repository-relative input/output paths
+  - reviewer-facing title/name
+  - metadata provenance fields
+
+Scientific/numerical/statistical changes:
+  NONE

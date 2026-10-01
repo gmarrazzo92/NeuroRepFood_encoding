@@ -1,0 +1,6 @@
+check,value,p
+RDM correlation: CLIP_50D vs CLIP_512D,0.4083555316396649,7.997218588047445e-183
+mean 5-nearest-neighbor overlap: CLIP_50D vs CLIP_512D,0.50625,
+CV R2: CLIP_50D -> RawCalorie,0.7693722815062344,
+CV R2: CLIP_512D -> RawCalorie,0.8732655242978136,
+Correlation: 50D-predicted calorie vs 512D-predicted calorie,0.955124717225889,1.8334338087656003e-51

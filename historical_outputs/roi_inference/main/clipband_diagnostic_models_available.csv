@@ -1,0 +1,4 @@
+model,label,short_label,long_label,dir,n_subjects_available
+D0_visual_noclip,D0 no CLIP,NoCLIP,LowVis + HighVisNoCLIP,E:\NeuroRepFood\NeuroRepFood_CLIP_code_v3\reproduced_outputs\encoding_models\D0_visual_noclip,25
+D1_visual_clipband,D1 CLIP band,+CLIPband,LowVis + HighVisNoCLIP + CLIPown,E:\NeuroRepFood\NeuroRepFood_CLIP_code_v3\reproduced_outputs\encoding_models\D1_visual_clipband,25
+D2_visual_clipband_predclip,D2 CLIP band + PredCLIP,+CLIPband+PredCLIP,LowVis + HighVisNoCLIP + CLIPown + CaloriePredCLIP,E:\NeuroRepFood\NeuroRepFood_CLIP_code_v3\reproduced_outputs\encoding_models\D2_visual_clipband_predclip,25

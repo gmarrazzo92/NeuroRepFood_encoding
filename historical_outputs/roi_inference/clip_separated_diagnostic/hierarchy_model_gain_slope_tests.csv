@@ -1,0 +1,3 @@
+comparison,comparison_label,model_A,model_B,n_subjects,mean_slope_delta_z_per_step,mean_slope_delta_r_per_step,cohens_dz_slope_z,p_expected,sig_unc_05_expected,q_fdr_bh,sig_fdr_05
+M2_predclip_gt_M0_visual,+PredCLIP > Visual,M2_visual_predclip,M0_visual,25,0.006597236883265554,0.006594767538044835,1.2706647403606408,1.999960000799984e-05,True,3.999920001599968e-05,True
+M1_rawcal_gt_M0_visual,+RawCal > Visual,M1_visual_rawcal,M0_visual,25,0.006449574302914627,0.006449223316303687,1.0639373789946518,3.999920001599968e-05,True,3.999920001599968e-05,True

@@ -1,0 +1,26 @@
+subject,comparison,comparison_label,model_A,model_B,slope_delta_z_per_step,slope_delta_r_per_step
+sub-104,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.002069539607329123,0.0020715296268463135
+sub-105,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.005129964963798324,0.0051313587464392185
+sub-109,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.01334315241333002,0.013340727426111698
+sub-112,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.0028749440057770424,0.0028781949658878148
+sub-115,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,-0.003112470315345861,-0.003108610399067402
+sub-117,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.0023158426023176526,0.0023185908794403076
+sub-118,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.005393693250114847,0.005400852998718619
+sub-122,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,-0.0024424225269155954,-0.002440100972307846
+sub-124,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.004280622064930038,0.004275565966963768
+sub-125,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.006797591655490018,0.006780976429581642
+sub-126,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.003989338777297824,0.003980735316872597
+sub-129,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.0022498032505963595,0.0022511128336191177
+sub-132,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.0024952623366298462,0.0025074933655560017
+sub-134,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.008412547755016804,0.008389418013393879
+sub-137,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.0031771742655595844,0.0031796395778656006
+sub-139,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.0014295692922388099,0.0014292290434241295
+sub-140,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.0029034983534326174,0.0028955191373825073
+sub-141,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.004805736395206981,0.00478681456297636
+sub-143,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.0024042188426541267,0.00240388885140419
+sub-144,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.007808104156795224,0.0078047297429293385
+sub-145,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.0006298173983580371,0.0006292667239904404
+sub-146,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.007987283680570762,0.00797306653112173
+sub-149,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.0016559460965878507,0.001652667298913002
+sub-150,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.005472886499296999,0.005455119535326958
+sub-151,D2_predclip_gt_D1_clipband,+PredCLIP > CLIPband,D2_visual_clipband_predclip,D1_visual_clipband,0.006030909762516726,0.006028427742421626

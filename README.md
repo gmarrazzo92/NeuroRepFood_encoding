@@ -2,7 +2,8 @@
 
 Code and reproducibility materials accompanying:
 
-**“Vision-language encoding models reveal an image-computable food-quality dimension in human occipitotemporal cortex.”**
+**“Vision-language encoding models reveal an image-computable food-quality dimension in human occipitotemporal cortex.” 
+by Marrazzo G, Roefs A and Pimpini L.**
 
 This repository supports two complementary workflows:
 

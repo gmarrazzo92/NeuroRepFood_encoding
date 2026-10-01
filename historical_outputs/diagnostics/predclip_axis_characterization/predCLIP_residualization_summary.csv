@@ -1,0 +1,3 @@
+target,r2_full_sample,residual_variance_fraction,control_set
+PredCLIP_residualized_from_core_annotations,0.76959413445744,0.23040583729743958,core_annotations
+PredCLIP_residualized_from_core_annotations_plus_category,0.7795360509185831,0.22046394646167755,core_annotations_plus_category

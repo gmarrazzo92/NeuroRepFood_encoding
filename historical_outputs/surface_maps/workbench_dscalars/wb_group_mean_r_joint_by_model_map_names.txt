@@ -1,0 +1,5 @@
+00	mean_r_joint__M0_visual
+01	mean_r_joint__M1_visual_rawcal
+02	mean_r_joint__M2_visual_predclip
+03	mean_r_joint__M3_visual_resclip
+04	mean_r_joint__M4_visual_pred_resclip

@@ -1,0 +1,7 @@
+comparison,comparison_label,pair,roi_A,roi_B,alternative,n_subjects,mean_pair_delta_z_A_minus_B,mean_pair_delta_r_A_minus_B,cohens_dz,p,sig_unc_05,q_fdr_bh,sig_fdr_05
+M1_rawcal_gt_M0_visual,+RawCal > Visual,Intermediate_gt_Early,IntermediateVisual,EarlyVisual,greater,25,0.00561356588751545,0.005552192790491972,0.4161906768505053,0.02149957000859983,True,0.02579948401031979,True
+M1_rawcal_gt_M0_visual,+RawCal > Visual,HighLevelVTC_gt_Early,HighLevelVTC,EarlyVisual,greater,25,0.012899148605829254,0.012898446632607374,1.0639373789946518,1.999960000799984e-05,True,5.9998800023999525e-05,True
+M1_rawcal_gt_M0_visual,+RawCal > Visual,HighLevelVTC_gt_Intermediate,HighLevelVTC,IntermediateVisual,greater,25,0.007285582718313801,0.007346253842115402,0.6358127068487545,0.0021799564008719826,True,0.003269934601307974,True
+M2_predclip_gt_M0_visual,+PredCLIP > Visual,Intermediate_gt_Early,IntermediateVisual,EarlyVisual,greater,25,0.0034095656233905356,0.0033654728104011156,0.2819847823927206,0.0883382332353353,False,0.0883382332353353,False
+M2_predclip_gt_M0_visual,+PredCLIP > Visual,HighLevelVTC_gt_Early,HighLevelVTC,EarlyVisual,greater,25,0.01319447376653111,0.01318953507608967,1.270664740360641,1.999960000799984e-05,True,5.9998800023999525e-05,True
+M2_predclip_gt_M0_visual,+PredCLIP > Visual,HighLevelVTC_gt_Intermediate,HighLevelVTC,IntermediateVisual,greater,25,0.009784908143140574,0.009824062265688554,0.8868376269548686,0.00017999640007199856,True,0.0003599928001439971,True

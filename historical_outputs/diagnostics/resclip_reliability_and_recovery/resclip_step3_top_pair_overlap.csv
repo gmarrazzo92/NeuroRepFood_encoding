@@ -1,0 +1,7 @@
+top_k_pairs,n_overlap,fraction_of_resclip_topk_overlapping_r1_topk
+25,0,0.0
+50,0,0.0
+100,3,0.03
+150,3,0.02
+250,10,0.04
+500,37,0.074

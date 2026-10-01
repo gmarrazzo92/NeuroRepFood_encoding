@@ -1,0 +1,10 @@
+00	mean_r_split__LowVis
+01	mean_r_split__HighVis
+02	mean_r_split__CaloriePredCLIP
+03	mean_r_split__CalorieResCLIP
+04	mean_r_split__Visual_LowVis_plus_HighVis
+05	mean_r_split__Calorie_Pred_plus_Res
+06	mean_delta_r_split__PredCLIP_minus_ResCLIP
+07	fraction_M4__PredCLIP_over_r_joint
+08	fraction_M4__ResCLIP_over_r_joint
+09	fraction_M4__Visual_over_r_joint

@@ -1,0 +1,21 @@
+﻿model;label;fold;n_train;n_test;ridgecv__alpha;kernelridge__alpha;kernelridge__gamma
+CLIP50_linear_ridge;Original 50-D CLIP ridge;1;76;20;10000;;
+CLIP50_linear_ridge;Original 50-D CLIP ridge;2;77;19;10000;;
+CLIP50_linear_ridge;Original 50-D CLIP ridge;3;77;19;10000;;
+CLIP50_linear_ridge;Original 50-D CLIP ridge;4;77;19;10000;;
+CLIP50_linear_ridge;Original 50-D CLIP ridge;5;77;19;10000;;
+CLIP50_rbf_kernel_ridge;Original 50-D CLIP RBF kernel ridge;1;76;20;;0,001;0,31622777
+CLIP50_rbf_kernel_ridge;Original 50-D CLIP RBF kernel ridge;2;77;19;;0,001;3,1622777
+CLIP50_rbf_kernel_ridge;Original 50-D CLIP RBF kernel ridge;3;77;19;;0,001;0,31622777
+CLIP50_rbf_kernel_ridge;Original 50-D CLIP RBF kernel ridge;4;77;19;;0,001;1
+CLIP50_rbf_kernel_ridge;Original 50-D CLIP RBF kernel ridge;5;77;19;;0,001;0,31622777
+CLIP512_linear_ridge;Full 512-D CLIP ridge;1;76;20;4641,5888;;
+CLIP512_linear_ridge;Full 512-D CLIP ridge;2;77;19;10000;;
+CLIP512_linear_ridge;Full 512-D CLIP ridge;3;77;19;10000;;
+CLIP512_linear_ridge;Full 512-D CLIP ridge;4;77;19;10000;;
+CLIP512_linear_ridge;Full 512-D CLIP ridge;5;77;19;10000;;
+CLIP512_discarded_PC51plus_ridge;Full 512-D CLIP discarded PCs ridge;1;76;20;1000;;
+CLIP512_discarded_PC51plus_ridge;Full 512-D CLIP discarded PCs ridge;2;77;19;215,44347;;
+CLIP512_discarded_PC51plus_ridge;Full 512-D CLIP discarded PCs ridge;3;77;19;215,44347;;
+CLIP512_discarded_PC51plus_ridge;Full 512-D CLIP discarded PCs ridge;4;77;19;100;;
+CLIP512_discarded_PC51plus_ridge;Full 512-D CLIP discarded PCs ridge;5;77;19;100;;

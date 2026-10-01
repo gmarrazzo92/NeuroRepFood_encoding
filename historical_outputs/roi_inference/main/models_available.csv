@@ -1,0 +1,6 @@
+model,label,short_label,long_label,dir,n_subjects_available
+M0_visual,M0 Visual,Visual,LowVis + HighVis,E:\NeuroRepFood\NeuroRepFood_CLIP_code_v3\reproduced_outputs\encoding_models\M0_visual,25
+M1_visual_rawcal,M1 +RawCal,+RawCal,LowVis + HighVis + raw perceived calorie,E:\NeuroRepFood\NeuroRepFood_CLIP_code_v3\reproduced_outputs\encoding_models\M1_visual_rawcal,25
+M2_visual_predclip,M2 +PredCLIP,+PredCLIP,LowVis + HighVis + CLIP-predicted calorie,E:\NeuroRepFood\NeuroRepFood_CLIP_code_v3\reproduced_outputs\encoding_models\M2_visual_predclip,25
+M3_visual_resclip,M3 +ResCLIP,+ResCLIP,LowVis + HighVis + CLIP-residual calorie,E:\NeuroRepFood\NeuroRepFood_CLIP_code_v3\reproduced_outputs\encoding_models\M3_visual_resclip,25
+M4_visual_pred_resclip,M4 +Pred+Res,+Pred+Res,LowVis + HighVis + CLIP-predicted + CLIP-residual calorie,E:\NeuroRepFood\NeuroRepFood_CLIP_code_v3\reproduced_outputs\encoding_models\M4_visual_pred_resclip,25
