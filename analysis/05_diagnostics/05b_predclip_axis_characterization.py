@@ -641,34 +641,9 @@ full_df = score_df.merge(ann_df, on=["index", "condition"], how="left")
 
 full_df.to_csv(os.path.join(OUTDIR, "stimulus_scores_and_manual_annotations.csv"), index=False)
 
-# Save a clean template for possible independent raters.
-rater_template = full_df[[
-    "index",
-    "condition",
-    "category_manual",
-    "processedness_0_3",
-    "naturalness_0_3",
-    "preparation_0_3",
-    "fruit_veg",
-    "raw_produce",
-    "animal_product",
-    "sweet_food",
-    "savory_food",
-    "dessert_snack",
-    "bakery_confectionery",
-    "fast_food_or_fried",
-    "composite_food",
-    "single_ingredient",
-]].copy()
-
-rater_template.to_csv(
-    os.path.join(OUTDIR, "manual_annotation_template_review_this.csv"),
-    index=False,
-)
 
 print("\nSaved annotation table:")
 print("  stimulus_scores_and_manual_annotations.csv")
-print("  manual_annotation_template_review_this.csv")
 
 
 # =============================================================================
