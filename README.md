@@ -137,6 +137,7 @@ Download the required inputs with:
 
 ```bash
 python run_pipeline.py download
+```
 
 The downloader is pinned to DataverseNL release version 1.0 for DOI:
 
