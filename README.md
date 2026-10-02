@@ -127,19 +127,16 @@ reproduced_outputs/
 
 # Public input data
 
-The standard full-analysis workflow starts from public GLMsingle trial-level derivatives rather than from raw fMRI data.
+The standard full-analysis workflow starts from the public GLMsingle trial-level derivatives rather than from raw fMRI data. These data originate from the companion study:
+
+> Marrazzo G, Pimpini L, Kochs S, De Martino F, Valente G, Roefs A. *Representational structure of perceived food attributes in human occipitotemporal cortex*. iScience (2026). DOI: 10.1016/j.isci.2026.117660.
+
+The corresponding public dataset is hosted on DataverseNL: https://doi.org/10.34894/TVPLVR.
 
 Download the required inputs with:
 
 ```bash
 python run_pipeline.py download
-```
-
-or directly:
-
-```bash
-python data_download/download_public_data.py
-```
 
 The downloader is pinned to DataverseNL release version 1.0 for DOI:
 
