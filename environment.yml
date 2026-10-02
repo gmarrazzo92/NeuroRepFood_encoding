@@ -1,0 +1,34 @@
+name: neurorepfood_encoding
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - pip
+  - git
+
+  # Core numerical/statistical stack
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - statsmodels
+
+  # Neuroimaging / plotting
+  - nibabel
+  - matplotlib
+  - pillow
+  - scikit-image
+
+  # Deep visual features
+  - pytorch
+  - torchvision
+
+  # Document generation
+  - python-docx
+
+  # Packages installed from PyPI / GitHub
+  - pip:
+      - himalaya
+      - git+https://github.com/openai/CLIP.git

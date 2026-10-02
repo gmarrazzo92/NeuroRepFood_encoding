@@ -1,23 +1,15 @@
 # Manuscript and Supplementary Output Reproduction
 
-This directory contains two complementary manuscript-output workflows.
+This directory provides two complementary routes for recreating the manuscript figures and supplementary tables.
 
-The two workflows generate the same manuscript-facing figures and supplementary
-tables, but they are intended for different use cases:
+1. **Direct manuscript reproduction** uses the validated analysis outputs bundled in `historical_outputs/`. It is the fastest route and does not require the public imaging derivatives or rerunning the encoding analysis.
+2. **Full-rerun manuscript reproduction** uses newly generated files under `reproduced_outputs/` after analysis steps 01–07 have been completed.
 
-1. **Fast reproduction from frozen outputs** — for reviewers or users who want
-   to recreate the manuscript figures/tables without rerunning the full analysis.
-2. **Full-rerun reproduction** — for users who rerun analysis steps 01–07 and
-   want the manuscript products to be regenerated from those newly computed
-   outputs.
-
-The distinction is important. The fast workflow should normally be sufficient
-for checking the manuscript figures and tables. The full-rerun workflow is only
-needed when the underlying analysis itself is rerun.
+Both routes write their products to `reproduced_outputs/manuscript/`.
 
 ---
 
-## Recommended script names
+## Scripts
 
 ```text
 figure_reproduction/
@@ -31,28 +23,7 @@ figure_reproduction/
             M2-M0_r_joint_uncorr.png
 ```
 
-### `recreate_manuscript_outputs.py`
-
-This is the **fast manuscript-reproduction script**.
-
-It reads the frozen analysis products stored under:
-
-```text
-historical_outputs/
-```
-
-and recreates the manuscript-facing quantitative figures and supplementary
-tables without requiring the imaging data, GLMsingle, feature extraction,
-encoding-model fitting, ROI inference, diagnostics, or permutation analyses to
-be rerun.
-
-Despite the legacy directory name, `historical_outputs/` should be understood
-in the release as the **frozen canonical manuscript-source snapshot**. Its
-contents are the validated outputs corresponding to the final reported
-analysis. The directory name is retained for compatibility with the existing
-reproduction script and repository structure.
-
-This is the workflow most reviewers should use.
+### Direct reproduction from bundled reference outputs
 
 Run from the repository root:
 
@@ -60,202 +31,89 @@ Run from the repository root:
 python figure_reproduction/recreate_manuscript_outputs.py
 ```
 
----
+or equivalently:
 
-### `recreate_manuscript_outputs_from_rerun.py`
-
-This is the **full-rerun manuscript-reproduction script**.
-
-It reads directly from:
-
-```text
-reproduced_outputs/
+```bash
+python run_pipeline.py figures
 ```
 
-after analysis steps 01–07 have been rerun. It should be used when a user wants
-to verify that a fresh execution of the analysis pipeline reproduces the
-manuscript-facing results.
+This route reads the validated reference analysis outputs distributed under:
 
-Run from the repository root only after the upstream analysis has completed:
+```text
+historical_outputs/
+```
+
+The directory name is retained for compatibility with the repository structure. Its contents are the reference outputs corresponding to the reported analysis.
+
+No GLMsingle data, feature extraction, model fitting, ROI inference, diagnostic analyses, or permutation analyses are required for this route.
+
+### Reproduction from a fresh full rerun
+
+After analysis steps 01–07 have completed, run:
 
 ```bash
 python figure_reproduction/recreate_manuscript_outputs_from_rerun.py
 ```
 
-This script performs a preflight check and stops if required regenerated inputs
-are missing. It does not fall back to `historical_outputs/`.
+or equivalently:
+
+```bash
+python run_pipeline.py figures-from-rerun
+```
+
+This script reads from:
+
+```text
+reproduced_outputs/
+```
+
+and stops during preflight if required regenerated inputs are missing. It does not fall back to `historical_outputs/`.
 
 ---
 
-# Which workflow should I use?
+## Which route should I use?
 
-| Goal | Script | Need to rerun analysis? |
+| Goal | Route | Full analysis rerun required? |
 |---|---|---:|
-| Recreate the reported manuscript figures/tables | `recreate_manuscript_outputs.py` | No |
-| Inspect the numerical source files behind the manuscript | `historical_outputs/` | No |
-| Verify that a fresh analysis rerun gives the same manuscript results | `recreate_manuscript_outputs_from_rerun.py` | Yes |
-| Modify the analysis and propagate the changes into manuscript outputs | `recreate_manuscript_outputs_from_rerun.py` | Yes |
-
-The fast workflow is therefore the default reproducibility route. The
-full-rerun workflow is a deeper computational validation route.
+| Recreate the reported figures and supplementary tables | `run_pipeline.py figures` | No |
+| Inspect the numerical reference outputs behind the manuscript | `historical_outputs/` | No |
+| Verify the complete analysis chain from public GLMsingle derivatives | analysis steps 01–07, then `figures-from-rerun` | Yes |
+| Modify the analysis and propagate the changes into manuscript outputs | analysis steps 01–07, then `figures-from-rerun` | Yes |
 
 ---
 
-# Frozen manuscript-source snapshot
+## Bundled reference outputs
 
-For the fast workflow to be self-contained, the final validated outputs from
-the full analysis are copied into the corresponding `historical_outputs/`
-subdirectories.
-
-The active snapshot should contain the final canonical results required by the
-manuscript reproduction script, approximately as follows:
+The direct reproduction script consumes only the files required to reconstruct the reported manuscript products. They are organized approximately as:
 
 ```text
 historical_outputs/
     feature_extraction/
-
+    bands/
     diagnostics/
         perceived_calorie_prediction/
         predclip_axis_characterization/
         clip_layer_rsa/
         resclip_reliability_and_recovery/
         feature_overlap_rv/
-
     roi_inference/
         main/
         clip_separated_diagnostic/
-
     robustness/
         permutation_null/
-
     surface_maps/
         workbench_dscalars/
 ```
 
-The exact filenames are those consumed by
-`recreate_manuscript_outputs.py`. Files not needed for manuscript reproduction
-do not need to be duplicated into this snapshot.
-
-The original pre-rerun analysis bundle should be preserved separately for
-author-side provenance and should not be silently overwritten. The active
-`historical_outputs/` directory in the release should contain the **validated
-canonical snapshot used to regenerate the final manuscript**, not a mixture of
-old and new analysis states.
+These files are included as validated reference outputs. The direct reproduction workflow does not modify them.
 
 ---
 
+## Figure 3
 
-## Automated snapshot refresh
+Figure 3 is a special case because the numerical cortical maps are generated programmatically, whereas final cortical-surface rendering is performed in Connectome Workbench.
 
-The release includes:
-
-```text
-refresh_historical_outputs_from_rerun.py
-```
-
-This maintainer script performs the refresh described above automatically. It
-maps the validated regenerated output directories onto the legacy-compatible
-`historical_outputs/` layout, replaces the managed snapshot directories rather
-than merging them, and regenerates the checksum manifest.
-
-Before making any changes, inspect the plan with:
-
-```bash
-python refresh_historical_outputs_from_rerun.py --dry-run
-```
-
-Then refresh the snapshot with:
-
-```bash
-python refresh_historical_outputs_from_rerun.py
-```
-
-On its first run, the script preserves the existing pre-canonical snapshot as:
-
-```text
-historical_outputs_original_backup/
-```
-
-This backup is for author-side provenance and should not be included in the
-public release.
-
-The refresh script maps:
-
-```text
-reproduced_outputs/feature_extraction
-    -> historical_outputs/feature_extraction
-
-reproduced_outputs/feature_bands
-    -> historical_outputs/bands
-
-reproduced_outputs/diagnostics/perceived_calorie_prediction_diagnostics
-    -> historical_outputs/diagnostics/perceived_calorie_prediction
-
-reproduced_outputs/diagnostics/predCLIP_axis_characterization_v2
-    -> historical_outputs/diagnostics/predclip_axis_characterization
-
-reproduced_outputs/diagnostics/clip_openai_layerwise_processing_rsa
-    -> historical_outputs/diagnostics/clip_layer_rsa
-
-reproduced_outputs/diagnostics/resclip_reliability_and_recovery_diagnostics
-    -> historical_outputs/diagnostics/resclip_reliability_and_recovery
-
-reproduced_outputs/diagnostics/feature_overlap_rv
-    -> historical_outputs/diagnostics/feature_overlap_rv
-
-reproduced_outputs/roi_inference
-    -> historical_outputs/roi_inference/main
-    -> historical_outputs/roi_inference/clip_separated_diagnostic
-
-reproduced_outputs/robustness/permutation_null
-    -> historical_outputs/robustness/permutation_null
-
-reproduced_outputs/surface_maps/workbench_dscalars
-    -> historical_outputs/surface_maps/workbench_dscalars
-```
-
-The same canonical ROI-inference directory is frozen under both legacy ROI
-aliases because the original manuscript-reproduction layout expects the main
-outputs and CLIP-separated diagnostic under separate historical paths, whereas
-the final rerun writes them together.
-
-
-# Refreshing `historical_outputs/` after a validated full rerun
-
-This step is a **maintainer/release step**, not something a reviewer needs to
-perform.
-
-After analysis steps 01–07 have been rerun and validated:
-
-1. Copy the required final outputs from `reproduced_outputs/` into the matching
-   `historical_outputs/` locations expected by
-   `recreate_manuscript_outputs.py`.
-2. Preserve the directory/file naming expected by the fast reproduction
-   script, even where the regenerated analysis uses slightly different
-   directory names.
-3. Copy the final Figure 3 screenshot inputs into the release static-input
-   location.
-4. Freeze the refreshed `historical_outputs/` snapshot and regenerate its
-   checksum manifest.
-5. Run `recreate_manuscript_outputs.py` to recreate the final manuscript-facing
-   figures and tables from the frozen snapshot.
-
-Only after this validation should the frozen snapshot be treated as the source
-for the fast reviewer-facing reproduction workflow.
-
----
-
-# Figure 3
-
-Figure 3 is a special case because the underlying cortical maps are generated
-programmatically, while final surface rendering is performed in Connectome
-Workbench.
-
-Analysis step 07 generates the canonical Workbench source maps. Panels B–D are
-then rendered manually in `wb_view` using the same display settings used for
-the manuscript. Panel A is the unchanged ROI illustration.
-
-The four assembly inputs are:
+Analysis step 07 creates the Workbench `.dscalar.nii` source maps. The manuscript panels B–D are rendered in `wb_view`; panel A is the ROI illustration. The four image inputs used to assemble the reported figure are:
 
 ```text
 figure_reproduction/static_inputs/figure3/
@@ -274,50 +132,37 @@ C  M2_r_joint_uncorr.png
 D  M2-M0_r_joint_uncorr.png
 ```
 
-For a full rerun, panels B–D should be recreated from the regenerated step-07
-Workbench maps before running
-`recreate_manuscript_outputs_from_rerun.py`.
+For direct manuscript reproduction, these rendered PNGs are already included, so Connectome Workbench is not required.
 
-For the fast reproduction route, the already rendered canonical PNG inputs are
-provided, so Connectome Workbench is **not required** simply to reassemble the
-reported Figure 3.
+For a fresh full rerun, regenerate the step-07 Workbench maps, render panels B–D with the manuscript display settings, replace the three corresponding PNGs under `static_inputs/figure3/`, and then run `python run_pipeline.py figures-from-rerun`.
 
-The underlying `.dscalar.nii` maps are retained separately so the displayed
-surface values can still be inspected independently of the screenshot
-assembly.
+The underlying `.dscalar.nii` files remain available so the plotted surface values can be inspected independently of the screenshots.
 
 ---
 
-# Noise ceilings
+## Noise ceilings
 
-Noise ceilings are **not recomputed by either manuscript-reproduction script**.
+The manuscript-reproduction scripts do not recompute noise ceilings. Noise ceilings are computed or loaded during ROI inference and the resulting ROI-level values are then consumed during figure/table generation.
 
-They are computed upstream during ROI inference and then read from the
-corresponding subject-level ROI output:
-
-Fast/frozen route:
+Direct reproduction reads:
 
 ```text
 historical_outputs/roi_inference/main/noise_ceiling_roi_values.csv
 ```
 
-Full-rerun route:
+A fresh rerun reads:
 
 ```text
 reproduced_outputs/roi_inference/noise_ceiling_roi_values.csv
 ```
 
-The stored `nc_r` values are already on the final correlation scale. The
-manuscript-reproduction scripts use these values to calculate the displayed
-group mean and 95% confidence interval and to draw the noise-ceiling bands.
-They do not apply the Spearman–Brown correction or square-root transformation
-again.
+The stored `nc_r` values are already on the final correlation scale. The reproduction scripts use them to calculate the displayed group summaries and do not reapply the Spearman–Brown or square-root transformations.
 
 ---
 
-# Manuscript-facing outputs
+## Generated manuscript products
 
-Both workflows write to:
+Both reproduction routes write to:
 
 ```text
 reproduced_outputs/manuscript/
@@ -325,7 +170,7 @@ reproduced_outputs/manuscript/
     tables/
 ```
 
-The analysis-derived products include:
+The analysis-derived products are:
 
 ```text
 Figures
@@ -340,81 +185,47 @@ Tables
     S8, S8b, S9, S10, S11, S12, S13, S14
 ```
 
-Some manuscript artwork is intentionally static rather than regenerated by the
-analysis code, including the experimental-design artwork, stimulus-image panel,
-and stimulus montage. These are presentation/stimulus assets rather than
-outputs of the statistical analysis.
+To combine the generated supplementary-table CSV files into a Word document, run:
+
+```bash
+python generate_supplementary_tables_docx.py
+```
+
+Some manuscript artwork is intentionally static rather than regenerated by the statistical pipeline, including the experimental-design artwork, representative-stimulus panels, and the full stimulus montage.
 
 ---
 
-# Full analysis route
+## Complete computational route
 
-A complete computational rerun follows the analysis stages in order:
+A full rerun proceeds in this order:
 
 ```text
 01  Feature extraction
 02  Feature-band construction
-03  Encoding models
+03  Encoding-model fitting
 04  ROI inference and noise ceilings
-05  Diagnostic analyses
+05  Diagnostic and characterization analyses
 06  Permutation robustness controls
 07  Surface-map generation
 ```
 
-After step 07:
-
-1. render the three regenerated Figure 3 surface screenshots in Workbench;
-2. place them with the unchanged `ROI.png` under
-   `figure_reproduction/static_inputs/figure3/`;
-3. run `recreate_manuscript_outputs_from_rerun.py`.
-
-This route generates the manuscript products entirely from the new analysis
-outputs.
-
----
-
-# Fast reviewer-facing route
-
-A reviewer who only wants to reproduce the reported manuscript outputs does
-**not** need to run steps 01–07.
-
-The intended route is simply:
+The top-level launcher runs these stages with:
 
 ```bash
-python figure_reproduction/recreate_manuscript_outputs.py
+python run_pipeline.py analysis
 ```
 
-This consumes the frozen canonical snapshot under `historical_outputs/` plus
-the static Figure 3 render inputs and recreates the manuscript-facing
-quantitative figures and tables.
+To recompute the split-half noise ceilings from the downloaded GLMsingle trial betas instead of loading the bundled reference maps, use:
 
-This separation keeps manuscript reproduction lightweight while retaining a
-second, independent route for full computational rerunning of the analysis.
-
----
-
-
-
-# Release principle
-
-The two routes should converge on the same manuscript-facing results:
-
-```text
-frozen canonical outputs
-        ↓
-recreate_manuscript_outputs.py
-        ↓
-manuscript figures/tables
-
-fresh analysis rerun (01–07)
-        ↓
-recreate_manuscript_outputs_from_rerun.py
-        ↓
-manuscript figures/tables
+```bash
+python run_pipeline.py analysis --nc-mode recompute
 ```
 
-For the release, the frozen snapshot is refreshed from the validated full
-rerun. This prevents reviewers from having to rerun the full imaging analysis
-merely to reproduce the reported figures and tables, while still providing
-the complete rerun pathway for users who want to verify the entire analysis
-chain.
+After step 07, recreate the Figure 3 Workbench screenshots as described above and run:
+
+```bash
+python run_pipeline.py figures-from-rerun
+python generate_supplementary_tables_docx.py
+```
+
+The two manuscript-reproduction routes are therefore complementary: one provides a lightweight recreation of the reported outputs from validated reference results, while the other verifies the complete path from the public analysis inputs through newly generated manuscript products.

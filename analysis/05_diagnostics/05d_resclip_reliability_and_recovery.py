@@ -1407,10 +1407,9 @@ _STEP23_PREDCLIP_FULL_CSV = os.path.join(
 R1_MODEL_RDM_VECTORS_CANDIDATES = [
     os.path.join(
         REPO_ROOT,
-        "historical_outputs",
-        "diagnostics",
-        "resclip_reliability_and_recovery",
-        "parent_RSA_input",
+        "resources",
+        "derived_inputs",
+        "parent_rsa",
         "model_rdm_vectors.csv",
     ),
 ]

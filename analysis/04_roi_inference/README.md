@@ -2,11 +2,6 @@
 
 This stage performs the final ROI-level inference for the encoding analysis.
 
-`run_roi_inference.py` is based on the final executed historical ROI-inference
-script containing both the primary M0–M4 family and the CLIP-separated D0–D2
-diagnostic family. Only filesystem paths and reviewer-facing naming were
-changed; the statistical calculations, model comparisons, ROI definitions,
-random seeds, FDR families, and figure-generation code are unchanged.
 
 ## Prerequisite
 
@@ -71,8 +66,8 @@ NC_MODE = "historical"
 
 with three allowed modes:
 
-- `"historical"` — load the frozen NC maps supplied in
-  `historical_outputs/`. This is the default for exact manuscript/figure
+- "historical" — load the bundled reference NC maps supplied in
+  historical_outputs/. This is the default for exact manuscript/figure
   reproduction and fails if a required historical NC map is missing.
 - `"cached"` — load only maps already present in
   `reproduced_outputs/roi_inference/noise_ceiling_cache/`. Missing maps are
@@ -98,7 +93,7 @@ python analysis/04_roi_inference/run_roi_inference.py --nc-mode recompute
 
 If no NC option is supplied, `historical` is used.
 
-Noise ceilings are descriptive and are not used for model fitting or primary statistical inference. Because their computation is relatively expensive, the default historical mode loads the frozen noise-ceiling maps used for the manuscript. Users who wish to verify the computation from the public GLMsingle outputs can instead use --recompute-nc; the resulting maps are cached for subsequent runs.
+Noise ceilings are descriptive and are not used for model fitting or primary statistical inference. Because their computation is relatively expensive, the default historical mode loads the bundled reference noise-ceiling maps used for the manuscript. Users who wish to verify the computation from the public GLMsingle outputs can instead use --recompute-nc; the resulting maps are cached for subsequent runs.
 
 ## Outputs
 

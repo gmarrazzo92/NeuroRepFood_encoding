@@ -54,11 +54,10 @@ ANALYSIS_STEPS = {
 }
 
 DOWNLOADER = Path("data_download/download_public_data.py")
-FIGURES_SNAPSHOT = Path("figure_reproduction/recreate_manuscript_outputs.py")
+FIGURES_REFERENCE = Path("figure_reproduction/recreate_manuscript_outputs.py")
 FIGURES_RERUN = Path(
     "figure_reproduction/recreate_manuscript_outputs_from_rerun.py"
 )
-REFRESH_SNAPSHOT = Path("refresh_historical_outputs_from_rerun.py")
 
 FIG3_INPUTS = [
     Path("figure_reproduction/static_inputs/figure3/ROI.png"),
@@ -154,7 +153,7 @@ def _figure_args(args):
 
 def cmd_figures(args):
     run_script(
-        FIGURES_SNAPSHOT,
+        FIGURES_REFERENCE,
         _figure_args(args),
         dry_run=args.dry_run,
     )
@@ -166,24 +165,6 @@ def cmd_figures_from_rerun(args):
         _figure_args(args),
         dry_run=args.dry_run,
     )
-
-
-def cmd_freeze_snapshot(args):
-    extra = []
-    if args.snapshot_dry_run:
-        extra.append("--dry-run")
-    elif not args.confirm:
-        raise SystemExit(
-            "Snapshot refresh replaces managed historical_outputs folders.\n"
-            "Inspect first with:\n"
-            "  python run_pipeline.py freeze-snapshot --snapshot-dry-run\n"
-            "Then rerun with --confirm."
-        )
-
-    if args.no_backup:
-        extra.append("--no-backup")
-
-    run_script(REFRESH_SNAPSHOT, extra, dry_run=args.dry_run)
 
 
 
@@ -203,9 +184,8 @@ def cmd_status(_args):
 
     for label, relpath in [
         ("Public-data downloader", DOWNLOADER),
-        ("Fast manuscript reproduction", FIGURES_SNAPSHOT),
+        ("Fast manuscript reproduction", FIGURES_REFERENCE),
         ("Rerun manuscript reproduction", FIGURES_RERUN),
-        ("Snapshot refresh tool", REFRESH_SNAPSHOT),
     ]:
         mark = "OK" if _exists(relpath) else "MISSING"
         print(f"  [{mark:7s}] {label}: {relpath}")
@@ -213,7 +193,7 @@ def cmd_status(_args):
     print("\nMain data/output locations:")
     for label, relpath in [
         ("Downloaded GLMsingle data", Path("data/glmsingle")),
-        ("Frozen canonical snapshot", Path("historical_outputs")),
+        ("Bundled reference outputs", Path("historical_outputs")),
         ("Feature extraction", Path("reproduced_outputs/feature_extraction")),
         ("Feature bands", Path("reproduced_outputs/feature_bands")),
         ("Encoding models", Path("reproduced_outputs/encoding_models")),
@@ -247,7 +227,7 @@ def build_parser():
     p = argparse.ArgumentParser(
         description=(
             "Top-level launcher for data download, analysis steps 01-07, "
-            "manuscript reproduction, and snapshot maintenance."
+            "and manuscript reproduction."
         )
     )
     sub = p.add_subparsers(dest="command", required=True)
@@ -295,8 +275,8 @@ def build_parser():
     s = sub.add_parser(
         "figures",
         help=(
-            "Fast reviewer-facing manuscript reproduction from the frozen "
-            "canonical snapshot."
+            "Recreate manuscript figures/tables from the bundled "
+            "reference outputs."
         ),
     )
     add_figure_flags(s)
@@ -312,30 +292,7 @@ def build_parser():
     add_figure_flags(s)
     s.set_defaults(func=cmd_figures_from_rerun)
 
-    s = sub.add_parser(
-        "freeze-snapshot",
-        help=(
-            "Maintainer action: refresh historical_outputs from a validated "
-            "full rerun."
-        ),
-    )
-    s.add_argument(
-        "--snapshot-dry-run",
-        action="store_true",
-        help="Show the refresh mapping without changing files.",
-    )
-    s.add_argument(
-        "--confirm",
-        action="store_true",
-        help="Required for an actual snapshot refresh.",
-    )
-    s.add_argument(
-        "--no-backup",
-        action="store_true",
-        help="Do not create the one-time original snapshot backup.",
-    )
-    s.add_argument("--dry-run", action="store_true")
-    s.set_defaults(func=cmd_freeze_snapshot)
+
 
 
     return p

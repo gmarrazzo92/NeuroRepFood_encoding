@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Fast manuscript reproduction from the frozen canonical output snapshot
+Fast manuscript reproduction from bundled reference outputs
 ======================================================================
 
-This is the reviewer-facing manuscript reproduction route.
+This script recreates manuscript outputs without rerunning the full analysis pipeline.
 
 It recreates manuscript-facing quantitative figures and supplementary tables
-from the frozen canonical snapshot stored under ``historical_outputs/``. It
+from the bundled reference outputs stored under ``historical_outputs/``. It
 does NOT rerun feature extraction, encoding models, ROI inference, diagnostics,
 permutation analyses, or surface-map generation.
 
@@ -23,7 +23,7 @@ Figure 3 is assembled from static Workbench screenshots stored under:
         M2_r_joint_uncorr.png
         M2-M0_r_joint_uncorr.png
 
-The underlying canonical Workbench dscalar maps are stored separately under
+The underlying Workbench dscalar maps are stored separately under
 ``historical_outputs/surface_maps/workbench_dscalars``.
 
 Default output:
@@ -818,7 +818,7 @@ def supplementary_s6():
 
 
 # -----------------------------------------------------------------------------
-# Figure 3 — frozen Workbench screenshot assembly
+# Figure 3 — Workbench screenshot assembly
 # -----------------------------------------------------------------------------
 FIG3_FILES = {
     "A": {
@@ -936,7 +936,7 @@ def _add_figure3_panel(ax, img, letter, title):
 
 def figure_3():
     """
-    Assemble Figure 3 from the frozen canonical Workbench screenshots.
+    Assemble Figure 3 from the bundled Workbench screenshots.
     Layout matches the historical assembly script.
     """
     _reset_mpl_defaults()
@@ -984,11 +984,11 @@ def figure_3():
 
     metadata = {
         "purpose": (
-            "Assemble the frozen canonical ROI panel and Workbench screenshots "
+            "Assemble the bundled reference ROI panel and Workbench screenshots "
             "into manuscript Figure 3."
         ),
         "created": datetime.now().isoformat(timespec="seconds"),
-        "input_source": "frozen canonical manuscript-source snapshot",
+        "input_source": "bundled reference outputs",
         "layout": {
             "rows": 4,
             "columns": 1,
@@ -1006,7 +1006,7 @@ def figure_3():
             for panel, spec in FIG3_FILES.items()
         },
         "input_files": input_records,
-        "frozen_surface_map_provenance": {
+        "surface_map_provenance": {
             "B": (
                 "historical_outputs/surface_maps/workbench_dscalars/"
                 "wb_group_mean_r_joint_by_model__HighLevelVTCmasked.dscalar.nii "
@@ -1209,7 +1209,7 @@ def table_s9():
             out[c] = [fmt_decimal(x) for x in out[c]]
         return write_table("S9", out)
 
-    # Backward-compatible fallback for older snapshots.
+    # Backward-compatible fallback for older output layouts.
     b = HIST / "feature_extraction"
     names = [
         "Gabor", "Color", "AlexNetMid", "AlexNetHigh", "CORnetIT",
@@ -1271,7 +1271,7 @@ def make_tables():
 # =============================================================================
 
 # =============================================================================
-# Frozen-snapshot entry point
+# Bundled-reference-output entry point
 # =============================================================================
 
 def resolve_repo_root(script_path: Path):
@@ -1285,7 +1285,7 @@ def resolve_repo_root(script_path: Path):
     return candidate
 
 
-def _required_snapshot_inputs(require_figure3=True):
+def _required_reference_inputs(require_figure3=True):
     req = [
         HIST / "diagnostics" / "perceived_calorie_prediction"
         / "calorie_prediction_cv_summary.csv",
@@ -1346,15 +1346,15 @@ def _required_snapshot_inputs(require_figure3=True):
 
 
 def preflight(require_figure3=True):
-    req = _required_snapshot_inputs(require_figure3=require_figure3)
+    req = _required_reference_inputs(require_figure3=require_figure3)
     missing = [p for p in req if not p.is_file()]
     if missing:
         lines = "\n".join(f"  MISSING: {p}" for p in missing)
         raise SystemExit(
-            "Frozen-snapshot manuscript reproduction preflight FAILED.\n"
+            "Bundled-output manuscript reproduction preflight FAILED.\n"
             "The following required inputs are missing:\n" + lines
         )
-    print(f"Preflight PASS: {len(req)} required frozen inputs found.")
+    print(f"Preflight PASS: {len(req)} required inputs found.")
 
 
 def clean_requested_outputs(figures=True, tables=True):
@@ -1370,7 +1370,7 @@ def main():
     parser = argparse.ArgumentParser(
         description=(
             "Recreate manuscript-facing figures and supplementary-table CSVs "
-            "from the frozen canonical snapshot in historical_outputs."
+            "from the bundled reference outputs in historical_outputs."
         )
     )
     default_repo = resolve_repo_root(Path(__file__))
@@ -1381,10 +1381,10 @@ def main():
         help="Repository root. Default: parent of figure_reproduction/.",
     )
     parser.add_argument(
-        "--snapshot-root",
+        "--reference-root",
         type=Path,
         default=None,
-        help="Override frozen historical_outputs directory.",
+        help="Override the bundled historical_outputs directory.",
     )
     parser.add_argument(
         "--output-root",
@@ -1420,8 +1420,8 @@ def main():
 
     REPO_ROOT = args.repo_root.resolve()
     HIST = (
-        args.snapshot_root
-        if args.snapshot_root is not None
+        args.reference_root
+        if args.reference_root is not None
         else REPO_ROOT / "historical_outputs"
     ).resolve()
     OUT_ROOT = (
@@ -1438,13 +1438,13 @@ def main():
     ).resolve()
 
     if not HIST.is_dir():
-        raise SystemExit(f"Frozen snapshot not found: {HIST}")
+        raise SystemExit(f"Reference outputs directory not found: {HIST}")
 
     print("=" * 88)
-    print("FAST MANUSCRIPT REPRODUCTION FROM FROZEN CANONICAL SNAPSHOT")
+    print("FAST MANUSCRIPT REPRODUCTION FROM BUNDLED REFERENCE OUTPUTS")
     print("=" * 88)
     print(f"Repository root : {REPO_ROOT}")
-    print(f"Frozen snapshot : {HIST}")
+    print(f"Reference inputs: {HIST}")
     print(f"Figure 3 inputs : {FIG3_INPUT}")
     print(f"Outputs         : {OUT_ROOT}")
 
@@ -1479,7 +1479,7 @@ def main():
     if make_tables_flag:
         print(f"Tables : {TAB_OUT}")
     print(
-        "\nSource: frozen canonical manuscript-source snapshot "
+        "\nSource: bundled reference outputs "
         "(historical_outputs)."
     )
 

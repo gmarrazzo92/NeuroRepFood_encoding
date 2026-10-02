@@ -22,9 +22,5 @@ torchvision
 # Installing from the repository avoids the unrelated `clip` package on PyPI.
 git+https://github.com/openai/CLIP.git
 
-# Optional deeper preprocessing provenance (optional_preprocessing/glmsingle/).
-# Not required for the standard pipeline, which starts from public GLMsingle derivatives.
-glmsingle
-
 python-docx
 

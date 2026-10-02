@@ -26,11 +26,11 @@ Historical source SHA-256:
 Release script SHA-256:
 
 ```text
-fa9de7ca73799af8ceb865c07d7ca12c567aa26d8bc199d8abdec47846b51653
+ac0b8f28000f88ee9c8a203b934b9601702adb20482f0f1291dbdc199886d001
 ```
 
 The numerical/statistical procedure is unchanged. Changes are limited to
-repository-relative paths, reviewer-facing naming, and metadata provenance.
+repository-relative paths, public-release naming, and metadata provenance.
 
 ## Inputs
 
@@ -116,5 +116,5 @@ shuffles.
 
 Do not place the old historical `permutation_null_results.csv` into the new
 output directory before the canonical rerun. The point of this run is to
-generate robustness results from the newly frozen encoding fits. Historical
+generate robustness results from the newly regenerated encoding fits. Historical
 outputs remain reference material only.

@@ -181,7 +181,7 @@ HIERARCHY_SPLIT_ROIS = ["EarlyVisual", "IntermediateVisual", "HighLevelVTC"]
 # Choose exactly one mode:
 #
 #   "historical"
-#       Load the frozen NC(r) maps supplied under historical_outputs/.
+#       Load the bundled reference NC(r) maps supplied under historical_outputs/.
 #       This is the default for exact manuscript/figure reproduction.
 #       Missing historical files are treated as an error.
 #
@@ -231,7 +231,7 @@ def _parse_nc_mode_from_cli():
         dest="nc_mode",
         action="store_const",
         const="historical",
-        help="Load frozen noise-ceiling maps from historical_outputs/ (default).",
+        help="Load bundled reference noise-ceiling maps from historical_outputs/ (default).",
     )
     group.add_argument(
         "--cached-nc", "-cached-nc",
@@ -799,7 +799,7 @@ def _legacy_nc_paths(sid):
 
 def _find_historical_nc_file(sid):
     """
-    Locate the frozen historical NC(r) file for one subject.
+    Locate the bundled reference historical NC(r) file for one subject.
 
     The exact internal layout of historical_outputs/ is not assumed. The
     resolver searches recursively for the canonical filename inside a
@@ -853,7 +853,7 @@ def _find_nc_file(sid):
     """
     Resolve an NC source according to NC_MODE.
 
-    historical -> frozen historical_outputs only
+    historical -> bundled reference historical_outputs only
     cached     -> reproduced cache only
     recompute  -> handled explicitly by load_noise_ceiling()
     """
@@ -1298,7 +1298,7 @@ def load_noise_ceiling(subjects, roi_masks):
     Load or recompute split-half noise-ceiling maps according to NC_MODE.
 
     historical
-        Load frozen NC(r) maps from historical_outputs/. Missing files are an
+        Load bundled reference NC(r) maps from historical_outputs/. Missing files are an
         error because this mode is intended for exact historical reproduction.
 
     cached

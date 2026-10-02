@@ -11,7 +11,15 @@ The top-level `run_pipeline.py` is a convenience launcher. It contains **no scie
 
 ## Installation
 
-Install the Python dependencies with:
+Two installation routes are supported.
+
+### Conda / Mamba — recommended
+
+```bash
+conda env create -f environment.yml
+conda activate neurorepfood_encoding
+
+### Pip
 
 ```bash
 pip install -r requirements.txt
@@ -602,3 +610,10 @@ python generate_supplementary_tables_docx.py
 ```
 
 This separation keeps manuscript reproduction lightweight while preserving a complete path from the public input data through the full encoding analysis.
+
+# License
+
+The analysis code in this repository is released under the MIT License.
+See [LICENSE](LICENSE) for details. Third-party data, model weights, atlases,
+and other external resources remain subject to their respective licenses
+and terms of use.

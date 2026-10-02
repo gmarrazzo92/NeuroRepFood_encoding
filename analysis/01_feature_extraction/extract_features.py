@@ -14,11 +14,11 @@ Extracts and saves all feature bands needed for banded ridge encoding.
 Bands:
   1. Gabor          — precomputed V1-style Gabor filter bank
   2. Color          — Lab histogram (8^3 bins, correlation distance)
-  3. AlexNetMid     — conv3 + conv5 PCA 100D  (mid-level visual)
+  3. AlexNetMid     — conv3 + conv5 PCA 50D  (mid-level visual)
   4. AlexNetHigh    — fc6 PCA 50D             (high-level visual)
   5. CORnetV4       — precomputed CORnet V4 PCA
   6. CORnetIT       — precomputed CORnet IT PCA
-  7. CLIP           — ViT-B/32 PCA 100D       (semantic visual)
+  7. CLIP           — ViT-B/32 PCA 50D       (semantic visual)
   8. Palatability   — group-mean z-scored ratings (1D)
   9. Calorie        — group-mean z-scored ratings (1D)
   10. Health        — group-mean z-scored ratings (1D)
@@ -77,9 +77,9 @@ PILOT_SUBJECTS = [
     150, 151
 ]
 
-ALEXNET_MID_PCA  = 50   # was 100 — capped at n_samples=96
-ALEXNET_HIGH_PCA = 50   # unchanged but now consistent
-CLIP_PCA         = 50   # was 100 — same reason
+ALEXNET_MID_PCA  = 50
+ALEXNET_HIGH_PCA = 50
+CLIP_PCA         = 50
 RANDOM_STATE     = 42
 
 # =============================================================================

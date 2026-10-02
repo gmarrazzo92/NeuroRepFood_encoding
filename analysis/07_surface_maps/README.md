@@ -6,38 +6,6 @@ This stage regenerates the descriptive Workbench CIFTI maps from the canonical
 It does **not** perform vertexwise statistical inference. Formal inference
 remains the participant-level ROI analysis from `04_roi_inference`.
 
-## Historical provenance
-
-`07a_generate_group_workbench_maps.py` is a path-adapted version of:
-
-```text
-regenerate_workbench_group_maps_neurorepfood.py
-```
-
-Historical SHA-256:
-
-```text
-bad6e0132ea7cc71330c9994653be4fc8a5ea32b212b53048cbb3815d7587df4
-```
-
-`07b` and `07c` use the same historical implementation from:
-
-```text
-mask_workbench_maps.py
-```
-
-Historical SHA-256:
-
-```text
-ff26c8facee4841836234d372fbd8f53a01fc3bdbadce747665b336c2222ed38
-```
-
-The historical mask script was run for both the group `r_joint` dscalar and the
-group model-gain dscalar. Two explicit release scripts are provided so both
-historically produced outputs can be recreated without manually editing a path.
-
-No map averaging, masking, fraction, or CIFTI-writing formula was changed.
-
 ## Inputs
 
 ```text

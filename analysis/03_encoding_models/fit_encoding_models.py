@@ -180,8 +180,7 @@ PILOT_SUBJECTS = [
     150, 151,
 ]
 
-# Subjects excluded from the fMRI encoding analysis.
-# sub-141 is excluded because the required fsLR 91k CIFTI output is missing.
+# Optional subject exclusions from the fMRI encoding analysis.
 # Do NOT add subjects here merely because they have fewer runs: shorter but
 # valid GLMsingle outputs are accepted below as long as all 96 conditions exist.
 EXCLUDE_SUBJECTS = {}

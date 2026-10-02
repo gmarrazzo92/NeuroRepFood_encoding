@@ -24,14 +24,13 @@ data/stimuli/ordered_stimuli.csv
 data/stimuli/images/
 ```
 
-The ResCLIP RDM bridge intentionally uses the frozen parent-RSA input:
+The ResCLIP RDM bridge uses the bundled parent-RSA input:
 
 ```text
-historical_outputs/
-  diagnostics/
-    resclip_reliability_and_recovery/
-      parent_RSA_input/
-        model_rdm_vectors.csv
+resources/
+  derived_inputs/
+    parent_rsa/
+      model_rdm_vectors.csv
 ```
 
 This is a fixed input from the parent RSA analysis, not something regenerated

@@ -1,39 +1,8 @@
 # 01 — Feature extraction
 
-This component reconstructs the feature matrices used by the encoding analyses.
-
-## Exact reproduction strategy
-
-Most feature arrays can be reconstructed exactly from the public stimuli,
-ratings, and downloaded inherited feature inputs.
-
-The deep-network arrays are a special case. Re-running the historical AlexNet
-and OpenAI CLIP forward passes from the same images and public weights produced
-the same representational geometry to high precision, but not bit-identical
-arrays under the current PyTorch/CUDA environment. This was negligible for
-AlexNet but was amplified by the historical 50-component global PCA for the
-lower-variance CLIP components.
-
-For exact downstream reproduction, the four small deep-network arrays used by
-the executed analysis are therefore distributed as fixed derived inputs:
-
-```text
-resources/
-└── derived_inputs/
-    └── deep_features/
-        ├── AlexNetMid.npy
-        ├── AlexNetHigh.npy
-        ├── CLIP.npy
-        └── CLIP_full512.npy
-```
-
-Their total size is small (~250 KiB). They are copied unchanged into the
-canonical feature output directory by `extract_features.py`.
-
-`reextract_deep_features.py` separately preserves the original image-model
-extraction procedure for provenance and transparency. Its outputs are written
-to a separate diagnostic directory and are not used by the exact reproduction
-pipeline.
+This component reconstructs the feature matrices used by the encoding analyses
+from the public stimulus images, behavioral ratings, and inherited CORnet/Gabor
+inputs.
 
 ## Inputs
 
@@ -43,7 +12,7 @@ First run:
 python data_download/download_public_data.py
 ```
 
-The canonical feature script then reads:
+The feature-extraction script reads:
 
 ```text
 data/
@@ -57,7 +26,49 @@ data/
     └── cornet_features/
         ├── V4_PCA_matrix.npy
         └── IT_PCA_matrix.npy
+```
 
+## Run
+
+From the repository root:
+
+```bash
+python analysis/01_feature_extraction/extract_features.py
+```
+
+Outputs are written to:
+
+```text
+reproduced_outputs/
+└── feature_extraction/
+```
+
+The script reconstructs:
+
+- categorical food labels;
+- group and per-subject behavioral rating features;
+- Gabor and color features;
+- the supplied CORnet V4 and IT feature matrices;
+- AlexNet mid- and high-level features from the stimulus images;
+- OpenAI CLIP ViT-B/32 features from the stimulus images; and
+- the full 512-dimensional normalized CLIP image embeddings used by later
+  diagnostic analyses.
+
+For AlexNet, the script uses hooks at `features[6]`, `features[10]`, and
+`classifier[4]`. AlexNetMid is formed from concatenated conv3 and conv5
+activations and reduced to 50 principal components; AlexNetHigh is derived from
+fc6 and reduced to 50 principal components. CLIP uses ViT-B/32; `CLIP.npy` is
+reduced to 50 principal components and `CLIP_full512.npy` contains row-wise
+L2-normalized 512-dimensional image embeddings.
+
+The script also computes and **prints** an RV-coefficient matrix across the
+feature spaces as a diagnostic. It does not save that matrix to CSV.
+
+## Deep-feature reference arrays
+
+The repository additionally contains four small arrays under:
+
+```text
 resources/
 └── derived_inputs/
     └── deep_features/
@@ -67,75 +78,28 @@ resources/
         └── CLIP_full512.npy
 ```
 
-## Canonical run
+These are the exact deep-network arrays from the executed historical analysis
+and are retained as reference/provenance inputs for comparison with a fresh
+re-extraction. They are **not** copied into `reproduced_outputs/` by
+`extract_features.py` and are not substituted for newly extracted arrays in the
+full rerun workflow.
 
-From the repository root:
+Small numerical differences can arise when pretrained-network features are
+re-extracted under different PyTorch, torchvision, CLIP, CUDA, or hardware
+environments. The bundled arrays therefore provide a fixed record of the
+historical feature matrices used for the reported analysis.
 
-```bash
-python analysis/01_feature_extraction/extract_features.py
-```
+## Software note for CLIP
 
-Output:
-
-```text
-reproduced_outputs/
-└── feature_extraction/
-```
-
-The script reconstructs the categorical, behavioral, Gabor, CORnet, and color
-features and installs the exact four frozen deep-network feature arrays.
-
-It also saves:
-
-```text
-rv_coefficient_matrix.csv
-```
-
-The historical feature script computed and printed this RV matrix but did not
-save it. Saving it here makes Supplementary Table S9 directly reproducible.
-
-## Optional deep-feature re-extraction
-
-To reproduce the original AlexNet/CLIP extraction procedure from the stimulus
-images:
-
-```bash
-python analysis/01_feature_extraction/reextract_deep_features.py
-```
-
-This writes to:
-
-```text
-reproduced_outputs/deep_feature_reextraction/
-```
-
-These files are diagnostic/provenance outputs only and are not substituted for
-the fixed arrays used by the historical analysis.
-
-This optional script requires PyTorch, torchvision, and the original OpenAI
-CLIP implementation:
+The full feature-extraction workflow requires the original OpenAI CLIP Python
+package because both the 50-dimensional CLIP representation and the full
+512-dimensional CLIP embeddings are extracted from the images:
 
 ```bash
 pip install git+https://github.com/openai/CLIP.git
 ```
 
-## Historical definitions preserved
-
-The provenance re-extraction script preserves the executed historical choices:
-
-- AlexNet hooks at `features[6]`, `features[10]`, and `classifier[4]`;
-- 50-component global PCA across all 96 stimuli for AlexNetMid and AlexNetHigh;
-- OpenAI CLIP ViT-B/32;
-- 50-component global PCA across all 96 unnormalized CLIP embeddings for
-  `CLIP.npy`;
-- row-wise L2 normalization of the 512-D CLIP embeddings for
-  `CLIP_full512.npy`.
-
-The canonical script preserves the historical non-deep feature construction,
-including subject-wise behavioral z-scoring followed by group averaging,
-StandardScaler transformations, and the original categorical definitions.
-
-## Expected canonical outputs
+## Expected outputs
 
 ```text
 AlexNetHigh.npy             96 x 50
@@ -157,9 +121,7 @@ Palatability.npy            96 x 1
 Palatability_persubject.npy 96 x 25
 SavorySweet.npy             96 x 1
 stimulus_names.npy          96
-
-rv_coefficient_matrix.csv   13 x 13
 ```
 
-The next pipeline component, `02_feature_bands`, consumes these canonical
+The next pipeline component, `02_feature_bands`, consumes these reconstructed
 feature arrays.

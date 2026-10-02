@@ -1,12 +1,25 @@
-# Frozen deep-network feature inputs
+# Deep-network feature reference arrays
 
-These are the exact arrays used by the executed historical analysis.
-They are bundled to make downstream reproduction invariant to small
-PyTorch/CUDA numerical differences in pretrained-network forward passes.
+These four arrays are the exact deep-network feature matrices used by the
+executed historical analysis:
 
-The original extraction procedure is preserved in:
+- `AlexNetMid.npy`
+- `AlexNetHigh.npy`
+- `CLIP.npy`
+- `CLIP_full512.npy`
 
-`analysis/01_feature_extraction/reextract_deep_features.py`
+They are retained as fixed reference/provenance arrays so that a newly
+re-extracted feature set can be compared with the matrices used for the
+reported results. They are not copied into `reproduced_outputs/` and are not
+used in place of newly extracted features by the standard full rerun.
+
+The extraction procedure is implemented directly in:
+
+`analysis/01_feature_extraction/extract_features.py`
+
+That script re-extracts AlexNet and OpenAI CLIP features from the public
+stimulus images. Small numerical differences from these historical arrays can
+occur across PyTorch, torchvision, CLIP, CUDA, or hardware environments.
 
 SHA-256 checksums:
 
