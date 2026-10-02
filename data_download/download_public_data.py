@@ -55,7 +55,7 @@ EXPECTED_CATEGORY_COUNTS = {
 BUNDLED_PARENT_RSA = (
     "resources/derived_inputs/parent_rsa/model_rdm_vectors.csv"
 )
-BUNDLED_PARENT_RSA_SHA1 = "c3fcafce53442bb2229cbbc9d38910f6080cb0d0"
+BUNDLED_PARENT_RSA_SHA1_LF = "67ad9a35b8c60a661e47a9b6ff647f912272d425"
 
 USER_AGENT = "NeuroRepFood-CLIP-public-data-downloader/1.1"
 
@@ -76,6 +76,11 @@ def sha1_file(path: Path) -> str:
             h.update(block)
     return h.hexdigest()
 
+def sha1_text_normalized_lf(path: Path) -> str:
+    """SHA-1 of a text file after normalizing CRLF/CR line endings to LF."""
+    data = path.read_bytes()
+    data = data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return hashlib.sha1(data).hexdigest()
 
 def request_json(url: str, timeout: int = 120) -> dict:
     req = urllib.request.Request(
@@ -485,13 +490,13 @@ def verify_bundled_parent_rsa(repo_root: Path):
             "because the exact 16-column historical input is not present in "
             "Dataverse v1.0."
         )
-    observed = sha1_file(path).lower()
-    if observed != BUNDLED_PARENT_RSA_SHA1:
+    observed = sha1_text_normalized_lf(path).lower()
+    if observed != BUNDLED_PARENT_RSA_SHA1_LF:
         raise RuntimeError(
             "Bundled parent-RSA input checksum mismatch:\n"
             f"  {path}\n"
-            f"Expected SHA-1: {BUNDLED_PARENT_RSA_SHA1}\n"
-            f"Observed SHA-1: {observed}"
+            f"Expected normalized SHA-1: {BUNDLED_PARENT_RSA_SHA1_LF}\n"
+            f"Observed normalized SHA-1: {observed}"
         )
 
 

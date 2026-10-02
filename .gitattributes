@@ -8,6 +8,3 @@
 *.jpeg binary
 *.pdf binary
 *.docx binary
-
-# Preserve checksum-validated bundled derived input byte-for-byte.
-resources/derived_inputs/parent_rsa/model_rdm_vectors.csv -text
