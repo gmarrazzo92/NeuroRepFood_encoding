@@ -18,6 +18,7 @@ Two installation routes are supported.
 ```bash
 conda env create -f environment.yml
 conda activate neurorepfood_encoding
+```
 
 ### Pip
 
